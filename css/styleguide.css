@@ -1,11 +1,5 @@
-@font-face {
-  font-family:"Raleway";
-  src: url(/Users/dong/Desktop/IAT339/P2-Company-Branding/Web-practice-Dong-Fang/P02-Company/fonts/Raleway-VariableFont_wght.ttf);
-  }
-  
-
 body {
-  font-family:"Raleway";
+  font-family:georgia;
   padding: 2rem;
   background-color: #f9f7f5;
 }
@@ -636,6 +630,12 @@ input[type=number] {
 
 .product-image {
   width: 400px;
+}
+
+
+#page-structure {
+  max-width: 100%;  
+  display: block;
 }
 
 #citations {
