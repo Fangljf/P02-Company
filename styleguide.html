@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
+    <title>Style Guide of Fang Ceramics</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Style Guide of Fang Ceramics</h1>
+      <p>Ceramic Products for Home & Soul</p>
+    </header>
+
+    <nav class="sticky">        
+      <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
+      <a href="#text_elements" class="button-nav">Text</a>
+      <a href="#combined_elements" class="button-nav">Components</a>
+      <a href="#branding_ideas" class="button-nav">Branding</a>
+      <a href="products.html" class="button-nav">Products</a>
+      <a href="cart.html" class="button-nav">Cart</a>
+      <a href="#citations" class="button-nav">Citations</a>
+    </nav>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="in_text_link_section">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="in-text-link" target="_blank"&gt;Click here&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+          <a href="#" class="in-text-link" target="_blank">Click here</a> 
+     
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="nav_link_section">
+        <h3>Navigation Link</h3>
+
+
+        <h4>Style1: CSS selector:</h4>
+        <p>.button-nav1</p>
+
+        <h4>Style1: Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav1"&gt;Home&lt;/a&gt;</code>
+
+        <h4>Style1: Rendered element:</h4>
+        <div>
+          <a href="#" class="button-nav1">Home</a>
+        </div>
+
+
+        <h4>Style2: CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Style2: Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav2"&gt;Mugs&lt;/a&gt;</code>
+
+        <h4>Style2: Rendered element:</h4>
+        <a href="#" class="button-nav2">Mugs</a>
+
+
+
+      </section>
+
+
+      <section class="submit_reset_section">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selectors:</h4>
+        <p>input[type="submit"]</p>
+        <p>input[type="reset"]</p>
+        <p>#submit-button</p>
+        <p>#reset-button</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;form&gt;</code>
+        <code>&lt;input type="submit" value="Submit" id="submit-button"&gt;</code>
+        <code>&lt;input type="reset" value="Reset" id="reset-button"&gt;</code>
+        <code>&lt;/form&gt;</code>
+
+        <h4>Rendered element:</h4>
+          <form>
+            <input type="submit" value="Submit" id="submit-button">
+            <input type="reset" value="Reset" id="reset-button">
+          </form>
+
+      </section>
+
+
+      <section class="text_field_section">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input[type=text]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;input type="text" id="fname" name="fname" placeholder="Enter here"&gt;</code>
+        
+        <h4>Rendered element:</h4>          
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter here">
+      </section>
+
+
+
+      <section class="radio_button_section">
+        <h3>Radio Button with Label</h3>
+          
+        <h4>CSS selector:</h4>
+        <p>input[type="radio"]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="radio" id="payment-method1" name="payment-method" value="1"&gt;</code>
+        <code>&lt;label for="payment-method1"&gt;Credit card&lt;/label&gt;</code>
+        <code>&lt;input type="radio" id="payment-method2" name="payment-method" value="2"&gt;</code>
+        <code>&lt;label for="payment-method2"&gt;PayPal&lt;/label&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <input type="radio" id="payment-method1" name="payment-method" value="1">
+        <label for="payment-method1">Credit card</label>
+        <input type="radio" id="payment-method2" name="payment-method" value="2">
+        <label for="payment-method2">PayPal</label>
+
+      </section>
+
+
+      <section class="image_as_link_section">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>#mug</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#"&gt;&lt;img id="imagelink" src="mug.png" alt="A handmade Japanese mug"&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a href="#"> 
+          <img id="imagelink" src="images/mug.png" alt="A handmade Japanese mug">
+        </a>
+
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <div id="text_elements">
+      <h2>Text Elements</h2>
+
+        <div class="heading_section">
+          <h3>Headings</h3>
+          
+          <h4>CSS selector:</h4>
+          <p>h1</p>
+          <p>h2</p>
+          <p>h3</p>
+          <p>h4</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h1&gt;The First Level of Heading&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;The Second Level of Heading&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;The Third Level of Heading&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;The Fourth Level of Heading&lt;/h4&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <h1>Page Title - Use as the title for the whole web-page</h1>
+          <h2>Card Title - Use as the title of a card</h2>
+          <h3>Section Title - Use to seperate sections</h3>
+          <h4>The Forth Level of Heading</h4>
+
+        </div>
+
+      <section class="paragraph_section">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;We are a group of ceramic artists working together in Burnaby, British Columbia. 
+        Co-design and handcraft a collection of ceramic mugs, glasses and more! We also teach 
+        potter's wheel workshops, craft mugs and host private events in our studio!&lt;/p&gt;</code>
+
+        <!-- Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks. -->
+        <h4>Rendered element:</h4>
+        <P>We are a group of ceramic artists working together in Burnaby, British Columbia. 
+        Co-design and handcraft a collection of ceramic mugs, glasses and more! We also teach 
+        potter's wheel workshops, craft mugs and host private events in our studio!</P>
+
+
+      </section>
+
+      <section class="numbered_list_section">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+        <p>li</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;</code>
+        <code>&lt;li&gt;Item&lt;/li&gt;</code>  
+        <code>&lt;li&gt;Price&lt;/li&gt;</code>
+        <code>&lt;li&gt;Quantity&lt;/li&gt;</code>
+        <code>&lt;/ol&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Item</li>
+          <li>Price</li>
+          <li>Quantity</li>
+        </ol> 
+      </section>
+      
+    </div>
+
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="main_nav_section">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.topnav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;nav class="topnav"&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;Home&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;Shop&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;Course&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;About&lt;/a&gt;</code>
+        <code>&lt;/nav&gt;</code>
+
+        <h4>Rendered elements:</h4>
+        <nav>
+          <a href="#" class="button-nav">Home</a>
+          <a href="#" class="button-nav">Shop</a>
+          <a href="#" class="button-nav">Course</a>
+          <a href="#" class="button-nav">About</a>
+        </nav>
+
+      </section>
+
+
+      <section class="second_nav_section">
+        <h3>Secondary Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.topnav</p>
+
+        <h4>Sample code:</h4>
+
+
+        <h4>Rendered elements:</h4>
+        <div>
+          <a href="#" class="secondary-selector-checked">Checked</a>
+          <a href="#" class="secondary-selector-unchecked">Unchecked</a>
+          <a href="#" class="secondary-selector-unchecked">Unchecked</a>
+        </div>
+      </section>
+
+
+      <section class="product_list_section">
+        <h3>Product/Service Listing</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.container1</p>
+        <p>.card1</p>
+        <p>.card2</p>
+        <p>.card3</p>
+        <p>.mug</p>
+        <p>.in-text-link</p>
+        <p>.add_to_cart</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class="container1"&gt;</code>
+        <code>&lt;div class="card1"&gt;</code>
+        <code>&lt;img class="mug" src="mug1.png" alt="Mount Fuji Mug"&gt;</code>
+        <code>&lt;h4&gt;Mount Fuji Mug&lt;/h4&gt;</code>
+        <code>&lt;p&gt;&lt;a href="css/mug1.html class="in-text-link"&gt;View Details&lt;/a&gt;&lt;/p&gt;</code>
+        <code>&lt;p&gt;$50&lt;/p&gt;</code>
+        <code>&lt;p&gt;&lt;button clas="add_to_cart"&gt;Add to Cart&lt;/button&gt;&lt;/p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;div class="card2"&gt;</code>
+        <code>&lt;img class="mug" src="mug2.png" alt="Blue Haze Mino Ware Yunomi Japanese Teacup"&gt;</code>
+        <code>&lt;h4&gt;Blue Haze Japanese Teacup&lt;/h4&gt;</code>
+        <code>&lt;p&gt;&lt;a href="css/mug2.html class="in-text-link"&gt;View Details&lt;/a&gt;&lt;/p&gt;</code>
+        <code>&lt;p&gt;$37&lt;/p&gt;</code>
+        <code>&lt;p&gt;&lt;button clas="add_to_cart"&gt;Add to Cart&lt;/button&gt;&lt;/p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;div class="card3"&gt;</code>
+        <code>&lt;img class="mug" src="mug3.png" alt="Magpie' Mug"&gt;</code>
+        <code>&lt;h4&gt;Magpie' Mug&lt;/h4&gt;</code>
+        <code>&lt;p&gt;&lt;a href="css/mug3.html class="in-text-link"&gt;View Details&lt;/a&gt;&lt;/p&gt;</code>
+        <code>&lt;p&gt;$62&lt;/p&gt;</code>
+        <code>&lt;p&gt;&lt;button clas="add_to_cart"&gt;Add to Cart&lt;/button&gt;&lt;/p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+
+        <h4>Rendered elements:</h4>
+        <div class="container1">
+
+          <div class="card1">
+            <img class="mug" src="images/mug1.png" alt="Everyday Mug | Stone">
+            <h4>Everyday Mug | Stone</h4>
+            <p><a href="css/mug1.html" class="in-text-link">View Details</a></p>
+            <p>$50</p>
+            <p><button class="add_to_cart">Add to Cart</button></p>
+          </div>
+          
+          <div class="card2">
+              <img class="mug" src="images/mug2.png" alt="Everyday Mug | Anthracite">
+            <h4>Everyday Mug | Anthracite</h4>
+            <p><a href="css/mug2.html" class="in-text-link">View Details</a></p>
+            <p>$37</p>
+            <p><button class="add_to_cart">Add to Cart</button></p>
+          </div>
+
+          <div class="card3">
+              <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite">
+          <h4>Dinner Bowl | Anthracite</h4>
+          <p><a href="css/mug3.html" class="in-text-link">View Details</a></p>
+          <p>$62</p>
+          <p><button class="add_to_cart">Add to Cart</button></p>
+          </div>
+        </div>
+  
+
+      </section>
+
+
+      <section class="payment_form_section">
+        <h3>Payment Form</h3>
+          
+        <h4>CSS selector:</h4>
+        <p>#payment-form</p>
+        <p>#payment-form-title</p>
+        <p>#radio</p>
+        <p>input[type="radio"]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div id="payment-form"&gt;</code>
+        <code></code>
+        <code>&lt;p id="payment-form-title"&gt;Choose your payment method:&lt;/p&gt;</code>
+        <code>&lt;div id="radio"&gt;</code>
+        <code>&lt;label class="payment-method"&gt;</code>
+        <code>&lt;input type="radio" name="method" value="1"&gt;Credit card&lt;/label&gt;</code>
+        <code>&lt;label class="payment-method"&gt;</code>
+        <code>&lt;input type="radio" name="method" value="2"&gt;PayPal&lt;/label&gt;</code>
+        <code>&lt;label&gt;</code>
+        <code>&lt;input type="radio" name="method" value="3" disabled&gt;WeChat&lt;/label&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code></code>
+        <code>&lt;div id="other-input"&gt;</code>
+        <code>&lt;label&gt;First name&lt;br&gt;&lt;input type="text" name="fname" placeholder="Enter here"&gt;&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;label&gt;Last name&lt;br&gt;&lt;input type="text" name="lname" placeholder="Enter here"&gt;&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;label&gt;Credit card number&lt;br&gt;&lt;input type="number" name="cardnumber" placeholder="Enter here"&gt;&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;label&gt;Security code&lt;br&gt;&lt;input type="number" name="secritycode" placeholder="Enter 3-digit code"&gt;&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;label&gt;Card expiration&lt;br&gt;&lt;input type="month" name="cardexpiration"&gt;&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code></code>
+        <code>&lt;input type="submit" value="Submit"&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h4>Rendered elements:</h4>
+     
+        <div id="payment-form">
+          <p id="payment-form-title">Choose your payment method:</p>
+
+          <div id="radio">
+            <label class="payment-method">
+              <input type="radio" name="method" value="1">Credit card
+            </label>
+            <label class="payment-method">
+              <input type="radio" name="method" value="2">PayPal
+            </label>
+            <label>
+              <input type="radio" name="method" value="3" disabled>WeChat
+            </label>
+          </div>
+          
+          <div id="other-input">
+            <label>
+              First name<br>
+              <input type="text" name="fname" placeholder="Enter here">
+            </label><br>
+
+            <label>
+              Last name<br>
+              <input type="text" name="lname" placeholder="Enter here">
+            </label><br>
+
+            <label>
+              Credit card number<br>
+              <input type="number" name="cardnumber" placeholder="Enter here">
+            </label><br>
+
+            <label>
+              Security code<br>
+              <input type="number" name="securitycode" placeholder="Enter 3-digit code">
+            </label><br>
+
+            <label>
+              Card expiration<br>
+              <input type="month" name="cardexpiration">
+            </label><br>
+          </div>
+
+          <input type="submit" value="Submit">
+
+        </div>
+
+      </section>
+
+
+      <section id="checkout_section">
+        <h3>Checkout Cart</h3>
+          
+          <h4>CSS selector:</h4>
+          <p>.checkout_cart</p>
+          <p>.cart_item1</p>
+          <p>.cart_item1_image</p>
+          <p>.cart_item1_price</p>
+          <p>.cart_item1_amount</p>
+          <p>.cart_item2</p>
+          <p>.cart_item2_image</p>
+          <p>.cart_item2_price</p>
+          <p>.cart_item2_amount</p>
+          <p>.total</p>
+          <p>.total-amount</p>
+          <p>.total-price</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;div class="checkout_cart"&gt;</code>
+          <code></code>
+          <code>&lt;section class="cart_item1"&gt;</code>
+          <code>&lt;div class="cart_item1_image"&gt;</code>
+          <code>&lt;img src="images/mug1.png" alt="Mount Fuji Mug" class="cart_image"&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="cart_item1_name"&gt;</code>
+          <code>&lt;p&gt;Mount Fuji Mug&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="cart_item1_price"&gt;</code>
+          <code>&lt;p&gt;$34&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="cart_item1_amount"&gt;</code>
+          <code>&lt;p&gt;1&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;/section&gt;</code>
+          <code></code>
+          <code>&lt;section class="cart_item2"&gt;</code>
+          <code>&lt;div class="cart_item2_image"&gt;</code>
+          <code>&lt;img src="images/mug2.png" alt="Blue Haze Mino Ware Yunomi Japanese Teacup" class="cart_image"&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="cart_item2_name"&gt;</code>
+          <code>&lt;p&gt;Blue Haze Japanese Teacup&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="cart_item2_price"&gt;</code>
+          <code>&lt;p&gt;$27&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="cart_item2_amount"&gt;</code>
+          <code>&lt;p&gt;1&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;/section&gt;</code>
+          <code></code>
+          <code>&lt;section class="total"&gt;</code>
+          <code>&lt;div class="total-amount"&gt;</code>
+          <code>&lt;p&gt;Total amount: 2&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="total-price"&gt;</code>
+          <code>&lt;p&gt;Total price:&lt;strong&gt; $61&lt;/strong&gt;&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;/section&gt;</code>
+          <code></code>
+          <code>&lt;/div&gt;</code>
+
+
+
+    
+          <h4>Rendered elements:</h4>    
+
+          <div class="checkout_cart">
+            <div class="cart_item1">
+              <div class="cart_item1_image">
+                <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
+              </div>
+              <div class="cart_item1_name">
+                <p>Everyday Mug | Stone</p>
+              </div>
+              <div class="cart_item1_price">
+                <p>$34</p>
+              </div>
+              <div class="cart_item1_amount">
+                <p>1</p>
+              </div>
+            </div>
+
+            <div class="cart_item2">
+              <div class="cart_item2_image">
+                <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
+              </div>
+              <div class="cart_item2_name">
+                <p>Everyday Mug | Anthracite</p>
+              </div>
+              <div class="cart_item2_price">
+                <p>$27</p>
+              </div>
+              <div class="cart_item2_amount">
+                <p>1</p>
+              </div>
+            </div>
+
+            <div class="total">
+              <div class="total-amount">
+                <p>Total amount: 2</p>
+              </div>
+              <div class="total-price">
+                <p>Total price:<strong> $61</strong></p>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    <!-- BRANDING IDEAS SECTION // -->
+    <section id="branding_ideas">
+      <h2>Branding Ideas</h2>
+
+      <section class="element">
+        <h3>Our Services</h3>
+        <h4>Name of the brand - Fang Ceramics</h4>
+        <p>An online shop selling handmade pottery</p>
+        <p>Slogan: As Unique as Yourself.</p>
+        <img id="logo" src="images/branding/fang-ceramics-logo.png" alt="Logo of Fang Ceramics">
+        <h4>Main features of this website</h4>
+        <ol>
+          <li>Sell unique ceramics products(main feature)</li>
+          <li>Allow users to book in-person classes</li>
+          <li>Allow users to contact the company</li>
+
+        </ol>
+
+        <h4>Our story: </h4>
+        <p>Fang Ceramics Studio was established in September 2021. We are a group of ceramic artists 
+          working together in Burnaby, British Columbia. Co-design and handcraft a collection of 
+          ceramic mugs, glasses and more! We also teach potter's wheel workshops, craft mugs and 
+          host private events in our studio!</p>
+      
+      </section>
+
+      
+      <section class="element">
+        <h3>Target Market</h3>
+        <p>Pottery lovers, craft lovers between the ages of 18-35 years old in Greater Vancouver area</p>
+        <div class="user_images">
+          <img id="user1" src="images/branding/user1.png" alt="Young man making pottery"> 
+          <img id="user2" src="images/branding/user2.png" alt="Young lady making pottery"> 
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Why might this company entice someone to purchase a product or service</h3>
+        <ul>
+          <li><strong>Strong connection: </strong><br>
+            All items in this online shop are unique and handmade. We hope to connect buyers with creators through our selected products.</li>
+          <li><strong>Express yourself: </strong><br>
+            People can express themselves and create their own unique pottery in our studio. We help people overcome
+            the fear of creating new, making mistakes and the whole design celebrates it.</li>
+          <li><strong>Sustainable production: </strong><br>
+            Each of our pieces is made by a completely handmade process in our studio, using local resources and privileging a type of production with minimal environmental impact.</li>
+        </ul>
+      </section>
+
+    </section>
+    <!-- // BRANDING IDEAS SECTION -->
+
+
+    <!-- BRAND COMPONENTS SECTION // -->
+    <section id="branding_components">
+      <h2>Brand Components</h2>
+        
+        <section class="element">
+          <h3>Fonts</h3>
+          <p><strong>Georgia</strong></p>
+          <P>The design of Georgia is a bit like an old metal type font. Therefore, it conveys a sense of handcraft and the weight of time. 
+            Just like our unique pottery products, they convey the warmth and love of artists, and they are inimitable by machine and therefore precious.</P>
+        </section>
+        
+
+        <section class="element">
+          <h3>Icons</h3>
+          <p>We employ these clean, rounded icons to convey a sense of minimalism, craftsmanship and refinement.</p>
+          <img id="icons" src="images/branding/icons.png" alt="icons">
+        </section>
+
+
+        <section class="element">
+          <h3>Colour palettes</h3>
+
+          <div class="color_palettes">
+            <div id="palette1">
+              <p>Secondary Colour: #E3D0B5</p>
+              <p class="text-under-palettes">This colour can be applied to dividing lines.</p>
+            </div>
+            <div id="palette2">
+              <p>Primary Colour: #B86646</p>
+              <p class="text-under-palettes">This is the brand color. Apply it in the main buttons, outlines while hovering, section title, decoration lines and in-text-links. </p>
+            </div>
+            <div id="palette3">
+              <p>Secondary Colour: #7C6354</p>
+              <p class="text-under-palettes">This colour can be applied to text, such as navigation link and secondary navigation. </p>
+            </div>
+            <div id="palette4">
+              <p>Secondary Colour: #635B50</p>
+              <p class="text-under-palettes">You can use this color in less important text, such as some auxiliary explanatory text.</p>
+            </div>
+            <div id="palette5">
+              <p>Secondary Colour: #3B3431</p>
+              <p class="text-under-palettes">You can use this colour in important text, such as body text. </p>
+
+            </div>
+  
+          </div>
+        </section>
+
+        <section class="element">
+          <h3>Mood board</h3>
+          <img id="moodboard" src="images/branding/moodboard.jpg" alt="Moodboard">
+        </section>
+
+        <section class="element">
+          <h3>Image styles</h3>
+          <p>We need to use high-quality images for our website. </p>
+          <p>To be more specific, the product display images need to be professionally photographed. The subject of the photo needs to be clearly presented. 
+            The picture needs to clearly present the details of the product, as well as conveying a sense of handcrafted sophistication and a serene and beautiful atmosphere.</p>
+          <p>As for the images used in Home page or About page, we need to use images that reflect the brand colors as much as possible. Such as earth tones, and colors close to clay.</p>
+          <p>Here are some examples of product images:</p>
+          <div class="image-wrapper">
+               <img class="product-image" src="images/mug1.png" alt="Product Image Sample">
+               <img class="product-image" src="images/mug2.png" alt="Product Image Sample">
+               <img class="product-image" src="images/mug3.png" alt="Product Image Sample">
+               <img class="product-image" src="images/mug4.png" alt="Product Image Sample">
+               <img class="product-image" src="images/mug5.png" alt="Product Image Sample">
+               <img class="product-image" src="images/mug6.png" alt="Product Image Sample">
+          </div>
+
+        </section>
+
+
+    </section>
+    <!-- // BRAND COMPONENTS SECTION -->
+
+
+    
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>W3Schools. (2022).<strong>Display a Month Input Control [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_month">here</a></li>
+        <li>Shay Howe. (2022).<strong>Building Forms [Online Tutorial]</strong>. Retrieved from <a href="https://learn.shayhowe.com/html-css/building-forms/#organizing-form-elements">here</a></li>
+        <li>W3Schools. (2022). <strong>How TO - Product Card [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_product_card.asp">here</a>.</li>
+        <li>W3Schools. (2022). <strong>How TO - Top Navigation [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_js_topnav.asp">here</a>.</li>
+        <li>W3Schools. (2022). <strong>HTML Ordered Lists [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_lists_ordered.asp">here</a>.</li>
+        <li>Steve. (2021). <strong>Linking Image in HTML: How to create links from images [Online Tutorial]</strong>. Retrieved from <a href="https://pagedart.com/blog/linking-images-in-html/">here</a>.</li>
+        <li>W3Schools. (2022). <strong>HTML Input="radio" [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/att_input_type_radio.asp">here</a>.</li>
+        <li>W3Schools. (2022). <strong>HTML Input="text" [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/att_input_type_text.asp">here</a>.</li>
+        <li>Stackoverflow. (2022). <strong>How do you select a radio button in css? [Online Tutorial]</strong>. Retrieved from <a href="https://stackoverflow.com/questions/1002579/how-do-you-select-a-radio-button-in-css">here</a>.</li>
+        <li>Tutorialspoint. (2022). <strong>HTML - Text Links [Online Tutorial]</strong>. Retrieved from <a href="https://www.tutorialspoint.com/html/html_text_links.htm">here</a>.</li>
+        <li>W3Schools. (2022). <strong>HTML button type Attribute [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/att_button_type.asp">here</a>.</li>
+        <li>W3Schools. (2022). <strong>CSS Links [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/css/css_link.asp">here</a>.</li>
+        <li>Stackoverflow. (2022). <strong>How to change border color of textarea on :focus [Online Tutorial]</strong>. Retrieved from <a href="https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus">here</a>.</li>
+        <li>Sara Cope. (2011). <strong>Box-shadow [Online Tutorial]</strong>. Retrieved from <a href="https://css-tricks.com/almanac/properties/b/box-shadow/#:~:text=The%20blur%20radius%20(required)%2C,be%2010px%20of%20total%20shadow.%20*/">here</a>.</li>
+        <li>W3Schools. (2022). <strong>CSS Opacity / Transparency [Online Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/css/css_image_transparency.asp">here</a>.</li>
+        <li>mdn web docs. (2022). <strong>::placeholder [Online Tutorial]</strong>. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder">here</a>.</li>
+        <li>Warren Davies. (2021). <strong>Sticky navbar [Online Tutorial]</strong>. Retrieved from <a href="      https://alvarotrigo.com/blog/sticky-navbar/#:~:text=To%20create%20a%20sticky%20navbar%2C%20you%20use%20the%20position%3A%20fixed,stick%20to%20its%20parent%20element.">here</a>.</li>
+        <li>TAV CERAMICS. (2023). <strong>TAV CERAMICS SHOP [Images of products]</strong>. Retrieved from <a href="https://tavceramics.com/collections/all">here</a>.</li>
+
+      </ul>
+    </section>
+
+    
+
+  </body>
+</html>
