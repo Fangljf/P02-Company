@@ -632,6 +632,12 @@ input[type=number] {
   width: 400px;
 }
 
+
+#page-structure {
+  max-width: 100%;  
+  display: block;
+}
+
 #citations {
   max-width: 800px;
 }
