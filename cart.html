@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
+    <title>Checkout page</title>
+    <link href="css/checkout.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container-nav">
+        <div class="logo">
+          <a href="#"><img id="logoimage" src="Images/Products/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="styleguide.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+ 
+
+      <div class="checkout_cart">
+        <p class="card_title">Shopping cart</p>
+        <div class="cart_item1">
+          <div class="cart_item1_image">
+            <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
+          </div>
+          <div class="cart_item1_name">
+            <p>Everyday Mug | Stone</p>
+          </div>
+          <div class="cart_item1_amount">
+            <p>1</p>
+          </div>
+          <div class="cart_item1_price">
+            <p>$34</p>
+          </div>
+
+        </div>
+
+
+        <div class="cart_item2">
+          <div class="cart_item2_image">
+            <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
+          </div>
+          <div class="cart_item2_name">
+            <p>Everyday Mug | Anthracite</p>
+          </div>
+          <div class="cart_item2_amount">
+            <p>1</p>
+          </div>
+          <div class="cart_item2_price">
+            <p>$27</p>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="total-amount">
+            <p>Total amount: 2</p>
+          </div>
+          <div class="total-price">
+            <p>Total price:<strong> $61</strong></p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    <div id="payment-form">
+      <p class="card_title">Choose your payment method:</p>
+
+      <div id="radio">
+        <label class="payment-method">
+          <input type="radio" name="method" value="1">Credit card
+        </label>
+        <label class="payment-method">
+          <input type="radio" name="method" value="2">PayPal
+        </label>
+        <label>
+          <input type="radio" name="method" value="3" disabled>WeChat
+        </label>
+      </div>
+      
+      <div id="other-input">
+        <label>
+          First name<br>
+          <input type="text" name="fname" placeholder="Enter here">
+        </label><br>
+
+        <label>
+          Last name<br>
+          <input type="text" name="lname" placeholder="Enter here">
+        </label><br>
+
+        <label>
+          Credit card number<br>
+          <input type="number" name="cardnumber" placeholder="Enter here">
+        </label><br>
+
+        <label>
+          Security code<br>
+          <input type="number" name="securitycode" placeholder="Enter 3-digit code">
+        </label><br>
+
+        <label>
+          Card expiration<br>
+          <input type="month" name="cardexpiration">
+        </label><br>
+      </div>
+
+      <input type="submit" value="Submit">
+
+    </div>
+
+
+
+
+
+
+
+  
+
+
+    
+    <div id="footer">
+      <p>© 2023 Fang Ceramics.</p>
+    </div>
+ 
+
+  </body>
+</html>
