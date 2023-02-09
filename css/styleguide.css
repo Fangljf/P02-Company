@@ -1,9 +1,45 @@
+@font-face {
+  font-family: PTSerif-Bold;
+  src: url(fonts/PTSerif-Bold.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-BoldItalic;
+  src: url(fonts/PTSerif-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: PTSerif-Italic;
+  src: url(fonts/PTSerif-Italic.ttf);
+}
+
+@font-face {
+font-family: PTSerif-Regular;
+src: url(fonts/PTSerif-Regular.ttf);
+}
+
+@font-face {
+font-family: Raleway-Italic;
+src: url(fonts/Raleway-Italic.ttf);
+}
+
+@font-face {
+font-family: Raleway-Light;
+src: url(fonts/Raleway-Light.ttf);
+}
+
 body {
-  font-family:georgia;
+  font-family: Raleway-Light;
   padding: 2rem;
   background-color: #f9f7f5;
 }
 
+h1, h2, h3, h4{
+  font-family: PTSerif-Regular;
+}
+
+
+h1
 /*header {
   margin:auto;
   width:80%;
