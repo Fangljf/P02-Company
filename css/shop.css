@@ -1,5 +1,16 @@
+
+@font-face {
+  font-family: Raleway-Italic;
+  src: url(fonts/Raleway-Italic.ttf);
+  }
+  
+  @font-face {
+  font-family: Raleway-Light;
+  src: url(fonts/Raleway-Light.ttf);
+  }
+  
 body {
-  font-family:Georgia;
+  font-family:Raleway-Light;
   background-color: #f9f7f5;
 }
 
@@ -91,6 +102,14 @@ nav li {
 .mug {
   max-width: 100%;
   display: block;
+}
+
+.mug:hover {
+  opacity:0.7; 
+}
+
+.mug:focus {
+  opacity:0.7;
 }
 
 .description {
