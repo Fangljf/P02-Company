@@ -18,11 +18,11 @@
       <div class="left-column">
         <h4>Delivery method</h4>
         <div class="delivery-method">
-          <div class="delivery-method-box-1">
+          <div class="delivery-method-box">
             <input type="radio" id="delivery-method1" name="delivery-method" value="1">
             <label for="delivery-method1"><img class="icon-delivery" src="images/checkout-page/ship.png" alt="Ship">Ship</label>
           </div>
-          <div class="delivery-method-box-2">
+          <div class="delivery-method-box">
             <input type="radio" id="delivery-method2" name="delivery-method" value="2">
             <label for="delivery-method2"><img class="icon-delivery" src="images/checkout-page/pickup.png" alt="Pickup">Pick up</label>
           </div>
@@ -31,9 +31,7 @@
         <h4>Pickup locations</h4>
         <div class="pickup-location-1">
           <input type="radio" id="pickup-location1" name="pickup-location" value="1">
-          <label for="pickup-location1">
-              <p class="location-name">Burnaby Studio</p>
-              <p class="pickup-address">1654 Eagles Dr, Burnaby BC</p>
+          <label for="pickup-location1">Burnaby Studio <p class="pickup-address">1654 Eagles Dr, Burnaby BC</p>
           </label>
         </div>
 
@@ -76,11 +74,10 @@
           </label><br>
         </div>
 
-        <a href="cart.html" class="return-to-cart"><img class="back-icon" src="images/checkout-page/back.png" alt="Back">Return to cart</a>
-
-        <a href="result.html">
-          <button id="buy-now">Buy now</button></a>
-        
+        <div class="bottom-actions">
+          <a href="cart.html" class="in-text-link"><img class="back-icon" src="images/checkout-page/back.png" alt="Back">Return to cart</a>
+          <a href="result.html"><button id="buy-now">Buy now</button></a>
+        </div>
 
       </div>
 
@@ -93,13 +90,11 @@
               <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
             </div>
             <div class="cart_item1_name">
-              <p>Everyday Mug | Stone</p>
+              <p class="cart-text">Everyday Mug | Stone</p>
+              <p class="cart-text">x2</p>
             </div>
             <div class="cart_item1_price">
               <p>$63</p>
-            </div>
-            <div class="cart_item1_amount">
-              <p>x2</p>
             </div>
           </div>
 
@@ -108,18 +103,16 @@
               <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
             </div>
             <div class="cart_item2_name">
-              <p>Everyday Mug | Anthracite</p>
+              <p class="cart-text">Everyday Mug | Anthracite</p>
+              <p class="cart-text">x1</p>
             </div>
             <div class="cart_item2_price">
               <p>$27</p>
             </div>
-            <div class="cart_item2_amount">
-              <p>x1</p>
-            </div>
           </div>
 
           <div class="discount">
-              <input type="text" name="discount-code" placeholder="Gift card or discount code">
+              <input type="number" name="discount-code" placeholder="Gift card or discount code">
               <button id="apply">Apply</button>
           </div>
 
@@ -136,7 +129,7 @@
           </div>
 
           <div class="total-price">
-            <div>Total</div><div>$123.43</div>      
+            <div>Total</div><p class="total-price-strong">$123.43</p>      
           </div>
 
         </div>

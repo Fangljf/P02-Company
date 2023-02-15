@@ -18,36 +18,71 @@ header {
   text-align: center;
 }
 
-#pickup-location1 {
-  position:relative;
-}
-
-.location-box {
+.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.container {
-  display: grid;
-}
-
-.mug {
-  max-width: 100%;
-  display: block;
-}
-
-.description {
+  flex-direction: row;
   max-width: 900px;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  border-top-width: 0.1rem;
-  border-top-style: solid;
-  border-top-color: #b86646;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-p {
-line-height: 1.5rem;
+.left-column {
+  border-right:1px solid #E3D0B5 ;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  flex:2;
+  min-width: 380px;
+}
+
+.right-column {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex:1;
+}
+
+
+input[type="radio"] {
+  width:16px;
+  height: 16px;
+}
+
+.icon-delivery {
+  width: 18px;
+  margin-right: 6px;
+}
+
+.delivery-method {
+  border: 1px solid #E3D0B5;
+  border-radius: 4px;  
+  margin-bottom: 2rem;
+
+}
+
+.delivery-method-box {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pickup-location-1 {
+  border: 1px solid #E3D0B5;
+  border-radius: 4px;
+  padding-left:1rem;
+  padding-top:1rem;
+  margin-bottom: 2rem;
+}
+
+.pickup-address {
+  padding-left: 1.6rem;
+  font-size: smaller;
+  color: #635B50;
+}
+
+#radio {
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -58,23 +93,68 @@ h3 {
   color: #b86646;
 }
 
-
-.imagelink {
-  max-width: 100%;
-  display: block;
+h4 {
+  margin-top: 0rem;
 }
 
-.imagelink:hover {
-  opacity:0.7; 
+input {
+  margin-bottom: 1.5rem;
+  margin-top:0.5rem;
+  height: 36px;
+  width: 100%;
+  border-width: 1px;
+  border-radius:4px;
+  border-style: solid;
+  border-color: #c6c6c5;
+  font-size:large;
 }
 
-.imagelink:focus {
-  opacity:0.7;
+input:hover {
+  border-color:#b86646;
 }
 
+input:focus {
+  outline:none;
+  border-color:#b86646;
+}
+
+
+input::placeholder {
+  font-family:Georgia;
+  font-size: 14px;
+  color: #c6c6c5;
+  padding-left: 0.4rem;
+}
+
+input[type=text] {
+  font-family:Georgia;
+  font-size: 16px;
+  max-width: 100%;  
+}
+
+input[type=number] {
+  font-family:Georgia;
+  font-size: 16px;
+  max-width: 100%;  
+}
+
+input[type=month] {
+  font-family:Georgia;
+  font-size: 16px;
+  max-width: 100%;  
+}
+
+.payment-method {
+  margin-right: 2rem;
+}
+
+.back-icon {
+width: 16px;
+}
 
 .in-text-link {
-  color:#b86646
+  color:#b86646;
+  text-decoration: none;
 }
 
 .in-text-link:hover {
@@ -85,10 +165,13 @@ h3 {
   color:#d79258
 }
 
-
-.cart_image {
-  max-width: 100px;
-}
+.bottom-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+} 
 
 
 #buy-now{
@@ -98,8 +181,6 @@ h3 {
   font-weight: 600;
   font-family:Georgia;
   color: #ffffff;
-  margin-top: 1rem;  
-  margin-bottom: 4rem;
   background-color:#b86646;
   border:0px;
   border-radius: 4px;
@@ -111,15 +192,87 @@ h3 {
   transition-duration: 0.5s;
 }
 
+
+/* Right-part */
+
+.cart_image {
+  max-width: 60px;
+}
+
+
+.cart_item1 {
+  display:flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+
+.cart_item1_image {
+  flex:1;
+}
+
+.cart_item1_name {
+  flex:3;
+  padding-left: 4px;
+}
+
+.cart_item1_price {
+  flex:1;
+  text-align: right;
+}
+
+
+.cart_item2 {
+  display:flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+
+.cart_item2_image {
+  flex:1;
+}
+
+.cart_item2_name {
+  flex:3;
+  padding-left: 4px;
+}
+
+.cart_item2_price {
+  flex:1;
+  text-align: right;
+}
+
+
+.cart-text {
+  font-size: smaller;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.right-column input[type=number] {
+  font-family:Georgia;
+  font-size: 14px;
+  max-width: 66%;  
+}
+
+.discount {
+  padding-top:1rem;
+  border-bottom: 1px solid #E3D0B5;
+  border-top: 1px solid #E3D0B5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #apply{
   height: 40px;
-  width: 80px;
+  width:30%;
+  margin-top:-1rem;
   font-size: medium;
   font-weight: 500;
   font-family:Georgia;
   color: #ffffff;
-  margin-top: 1rem;  
-  margin-bottom: 4rem;
   background-color:#b86646;
   border:0px;
   border-radius: 4px;
@@ -131,6 +284,42 @@ h3 {
   transition-duration: 0.5s;
 }
 
+.sub-total {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E3D0B5;
+}
+
+#subtotal {
+  display:flex;
+  justify-content: space-between;
+}
+
+#delivery-fee {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#estimated-taxes {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+
+.total-price {
+  border-top: 1px #E3D0B5 solid;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-price-strong {
+  font-size: larger;
+  font-weight: 500;
+  color: #b86646;
+}
 
 
 
@@ -145,10 +334,7 @@ h3 {
     flex-direction: column;
   }
   
-  .container1 .card {
-    max-width: 500px;
-  }
-  
+
 }
 
 
