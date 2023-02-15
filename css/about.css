@@ -56,7 +56,7 @@ h3{
 
 /* font(end)*/
 
-/* Navigation */
+/* Navigation(start) */
 header {
   position: fixed;
   top:0;
@@ -134,7 +134,7 @@ nav ul li ul li a:hover{
 nav ul li:hover ul{
   display: block;
 }
-
+/* Navigation(start) */
 
 /* Content */
 
