@@ -56,6 +56,10 @@ nav a:hover, nav a:focus {
   text-decoration: none;
 }
 
+.success {
+  width: 100px;
+}
+
 .result {
   margin-top: 7rem;
   max-width: 900px;
