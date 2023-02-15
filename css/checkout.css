@@ -5,88 +5,32 @@ body {
 
 #logoimage {
   height: 26px;
-}
-
-nav a {
-  text-decoration: none;
-  color:#7C6354;
-}
-
-nav a:hover,
-nav a:focus {
-  padding-bottom: 6px;
-  font-weight: bold;
-  border-bottom: 2px solid #7c6354;
-}
-
-.container-nav {
-  max-width: 900px;
-  width: 90%;
   margin-left:auto;
   margin-right:auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
 
 header {
-  position: fixed;
-  top:0;
   background-color: #f9f7f5;
   width: 100%;
-  box-shadow: 0 4px 16px #efedec;
-}
-
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin-left:1rem;
-  margin-right:1rem;
-}
-
-
-.title {
+  padding-top: 10px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #E3D0B5;
   text-align: center;
-  margin-bottom: 4rem;
-  margin-top: 9rem;
 }
 
-
-.category {
-  width:90%;
-  max-width: 900px;
-  margin: 2rem auto;
+#pickup-location1 {
+  position:relative;
 }
 
-.container1 {
+.location-box {
   display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
   flex-wrap: wrap;
-  justify-content:center;
-  width: 100%;
+  justify-content: space-between;
 }
 
-.container1 .card {
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px #efedec;
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  max-width: 250px;
+.container {
+  display: grid;
 }
-
 
 .mug {
   max-width: 100%;
@@ -112,12 +56,6 @@ h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: #b86646;
-}
-
-
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
 }
 
 
@@ -148,21 +86,46 @@ nav a:hover, nav a:focus {
 }
 
 
+.cart_image {
+  max-width: 100px;
+}
 
 
-.add_to_cart {
-  height: 40px;
-  width: 120px;
-  font-size:14px;
+#buy-now{
+  height: 50px;
+  width: 160px;
+  font-size: large;
   font-weight: 600;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:Georgia;
   color: #ffffff;
+  margin-top: 1rem;  
+  margin-bottom: 4rem;
   background-color:#b86646;
   border:0px;
   border-radius: 4px;
 }
 
-.add_to_cart:hover {
+#buy-now:hover {
+  background-color:#d79258;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+#apply{
+  height: 40px;
+  width: 80px;
+  font-size: medium;
+  font-weight: 500;
+  font-family:Georgia;
+  color: #ffffff;
+  margin-top: 1rem;  
+  margin-bottom: 4rem;
+  background-color:#b86646;
+  border:0px;
+  border-radius: 4px;
+}
+
+#apply:hover {
   background-color:#d79258;
   transition-property: background-color; 
   transition-duration: 0.5s;

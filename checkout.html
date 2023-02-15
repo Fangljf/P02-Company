@@ -4,273 +4,149 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
-    <title>Product listing page</title>
+    <title>Check out page</title>
     <link href="css/checkout.css" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <div class="container-nav">
-        <div class="logo">
-          <a href="#"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="styleguide.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="cart.html">Cart</a></li>
-          </ul>
-        </nav>
-      </div>
+       <a href="home.html" class="logo"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
     </header>
 
-    <div class="title">
-      <h1>All</h1>
-      <p>25 Products</p>
+    <div class="container">
+
+      <div class="left-column">
+        <h4>Delivery method</h4>
+        <div class="delivery-method">
+          <div class="delivery-method-box-1">
+            <input type="radio" id="delivery-method1" name="delivery-method" value="1">
+            <label for="delivery-method1"><img class="icon-delivery" src="images/checkout-page/ship.png" alt="Ship">Ship</label>
+          </div>
+          <div class="delivery-method-box-2">
+            <input type="radio" id="delivery-method2" name="delivery-method" value="2">
+            <label for="delivery-method2"><img class="icon-delivery" src="images/checkout-page/pickup.png" alt="Pickup">Pick up</label>
+          </div>
+        </div>
+
+        <h4>Pickup locations</h4>
+        <div class="pickup-location-1">
+          <input type="radio" id="pickup-location1" name="pickup-location" value="1">
+          <label for="pickup-location1">
+              <p class="location-name">Burnaby Studio</p>
+              <p class="pickup-address">1654 Eagles Dr, Burnaby BC</p>
+          </label>
+        </div>
+
+        <h4>Choose your payment method</h4>
+        <div id="radio">
+          <label class="payment-method">
+            <input type="radio" name="method" value="1">Credit card
+          </label>
+          <label class="payment-method">
+            <input type="radio" name="method" value="2">PayPal
+          </label>
+          <label>
+            <input type="radio" name="method" value="3" disabled>WeChat
+          </label>
+        </div>
+        <div id="other-input">
+          <label>
+            First name<br>
+            <input type="text" name="fname" placeholder="Enter here">
+          </label><br>
+
+          <label>
+            Last name<br>
+            <input type="text" name="lname" placeholder="Enter here">
+          </label><br>
+
+          <label>
+            Credit card number<br>
+            <input type="number" name="cardnumber" placeholder="Enter here">
+          </label><br>
+
+          <label>
+            Security code<br>
+            <input type="number" name="securitycode" placeholder="Enter 3-digit code">
+          </label><br>
+
+          <label>
+            Card expiration<br>
+            <input type="month" name="cardexpiration">
+          </label><br>
+        </div>
+
+        <a href="cart.html" class="return-to-cart"><img class="back-icon" src="images/checkout-page/back.png" alt="Back">Return to cart</a>
+
+        <a href="result.html">
+          <button id="buy-now">Buy now</button></a>
+        
+
+      </div>
+
+
+      <div class="right-column">
+
+        <div class="checkout_cart">
+          <div class="cart_item1">
+            <div class="cart_item1_image">
+              <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
+            </div>
+            <div class="cart_item1_name">
+              <p>Everyday Mug | Stone</p>
+            </div>
+            <div class="cart_item1_price">
+              <p>$63</p>
+            </div>
+            <div class="cart_item1_amount">
+              <p>x2</p>
+            </div>
+          </div>
+
+          <div class="cart_item2">
+            <div class="cart_item2_image">
+              <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
+            </div>
+            <div class="cart_item2_name">
+              <p>Everyday Mug | Anthracite</p>
+            </div>
+            <div class="cart_item2_price">
+              <p>$27</p>
+            </div>
+            <div class="cart_item2_amount">
+              <p>x1</p>
+            </div>
+          </div>
+
+          <div class="discount">
+              <input type="text" name="discount-code" placeholder="Gift card or discount code">
+              <button id="apply">Apply</button>
+          </div>
+
+          <div class="sub-total">
+            <div id="subtotal">
+              <div>Subtotal</div><div>$122.00</div>
+            </div>
+            <div id="delivery-fee">
+              <div>Pickup</div><div>Free</div>
+            </div>
+            <div id="estimated-taxes">
+              <div>Estinmated taxes</div><div>$14.43</div>
+            </div>
+          </div>
+
+          <div class="total-price">
+            <div>Total</div><div>$123.43</div>      
+          </div>
+
+        </div>
+
+
+        
+      </div>
+
     </div>
 
-    <section class="Mugs category">
-      <h3>Handmade Pottery Mugs</h3>
-      <p class="description">Shop handmade pottery mugs from local Canadian potters.  Ceramic mugs will keep your hot drinks hot and your cold drinks cold.  Support Canadian potters by shopping pottery mugs with Fang Ceramics, your premier destination for shopping Canadian pottery online.</p>
-      <div class="container1">
-        <div class="card">
-          <img class="mug" src="images/mug1.png" alt="Everyday Mug | Stone">
-          <h4>Everyday Mug | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug2.png" alt="Everyday Mug | Anthracite">
-          <h4>Everyday Mug | Anthracite</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite">
-          <h4>Dinner Bowl | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug4.png" alt="Bud Vase | Stone">
-          <h4>Bud Vase | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug5.png" alt="Breakfast Bowl | Stone">
-          <h4>Breakfast Bowl | Stone</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug6.png" alt="Large Vase | Anthracite">
-          <h4>Large Vase | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        <div class="card">
-          <img class="mug" src="images/mug1.png" alt="Everyday Mug | Stone">
-          <h4>Everyday Mug | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug2.png" alt="Everyday Mug | Anthracite">
-          <h4>Everyday Mug | Anthracite</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite">
-          <h4>Dinner Bowl | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug4.png" alt="Bud Vase | Stone">
-          <h4>Bud Vase | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug5.png" alt="Breakfast Bowl | Stone">
-          <h4>Breakfast Bowl | Stone</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug6.png" alt="Large Vase | Anthracite">
-          <h4>Large Vase | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="Bowls category">
-      <h3>Handmade Pottery Bowls</h3>
-      <p class="description">Shop our wide range of handmade pottery bowls.  Our collection of made-in-Canada bowls feature stoneware bowls of all sizes: soup bowls to mixing bowls to serving or salad bowls.  </p>
-      <div class="container1">
-        <div class="card">
-          <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite">
-          <h4>Dinner Bowl | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug4.png" alt="Bud Vase | Stone">
-          <h4>Bud Vase | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug5.png" alt="Breakfast Bowl | Stone">
-          <h4>Breakfast Bowl | Stone</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug6.png" alt="Large Vase | Anthracite">
-          <h4>Large Vase | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-       
-        <div class="card">
-          <img class="mug" src="images/mug1.png" alt="Everyday Mug | Stone">
-          <h4>Everyday Mug | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug2.png" alt="Everyday Mug | Anthracite">
-          <h4>Everyday Mug | Anthracite</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite">
-          <h4>Dinner Bowl | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug4.png" alt="Bud Vase | Stone">
-          <h4>Bud Vase | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug5.png" alt="Breakfast Bowl | Stone">
-          <h4>Breakfast Bowl | Stone</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-
-      </div>
-
-    </section>
-
-    <section class="Vases category">
-      <h3>Ceramic Vases</h3>
-      <p class="description">Ceramic vases add beauty to any room with unique designs, colours and shapes.</p>
- 
-      <div class="container1">
-      
-        <div class="card">
-          <img class="mug" src="images/mug1.png" alt="Everyday Mug | Stone">
-          <h4>Everyday Mug | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug2.png" alt="Everyday Mug | Anthracite">
-          <h4>Everyday Mug | Anthracite</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite">
-          <h4>Dinner Bowl | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug4.png" alt="Bud Vase | Stone">
-          <h4>Bud Vase | Stone</h4>
-          <a href="css/mug1.html" class="in-text-link">View Details</a>
-          <p>$50</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-        
-        <div class="card">
-          <img class="mug" src="images/mug5.png" alt="Breakfast Bowl | Stone">
-          <h4>Breakfast Bowl | Stone</h4>
-          <a href="css/mug2.html" class="in-text-link">View Details</a>
-          <p>$37</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-        <div class="card">
-          <img class="mug" src="images/mug6.png" alt="Large Vase | Anthracite">
-          <h4>Large Vase | Anthracite</h4>
-          <a href="css/mug3.html" class="in-text-link">View Details</a>
-          <p>$62</p>
-          <button class="add_to_cart">Add to Cart</button>
-        </div>
-
-      </div>
-
-    </section>
     
     <div id="footer">
       <p>© 2023 Fang Ceramics.</p>
