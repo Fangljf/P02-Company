@@ -52,17 +52,48 @@ nav li {
   margin-right:1rem;
 }
 
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
 .result {
   margin-top: 7rem;
-}
-
-.category {
-  width:90%;
   max-width: 900px;
-  margin: 2rem auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.container1 {
+
+#continue-shopping{
+  height: 50px;
+  width: 220px;
+  font-size: large;
+  font-weight: 600;
+  font-family:Georgia;
+  color: #ffffff;
+  margin-top: 1rem;  
+  background-color:#b86646;
+  border:0px;
+  border-radius: 4px;
+}
+
+#continue-shopping:hover {
+  background-color:#d79258;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+
+
+.recommendation {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.container {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
@@ -72,7 +103,7 @@ nav li {
   width: 100%;
 }
 
-.container1 .card {
+.container .card {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
@@ -84,36 +115,30 @@ nav li {
 }
 
 
+.order-details {
+  color:#635B50 ;
+}
+
 .mug {
   max-width: 100%;
   display: block;
 }
 
-.description {
-  max-width: 900px;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  border-top-width: 0.1rem;
-  border-top-style: solid;
-  border-top-color: #b86646;
-}
 
 p {
-line-height: 1.5rem;
+line-height: 1rem;
+}
+
+h2 {
+  color:#3B3431 ;
 }
 
 h3 {
-  font-style: italic;
   font-size: larger;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
   color: #b86646;
-}
-
-
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
+  text-align: center;
 }
 
 
@@ -129,21 +154,6 @@ nav a:hover, nav a:focus {
 .imagelink:focus {
   opacity:0.7;
 }
-
-
-.in-text-link {
-  color:#b86646
-}
-
-.in-text-link:hover {
-  color:#d79258
-}
-
-.in-text-link:focus {
-  color:#d79258
-}
-
-
 
 
 .add_to_cart {
@@ -166,7 +176,6 @@ nav a:hover, nav a:focus {
 
 
 
-
 #footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
@@ -178,7 +187,7 @@ nav a:hover, nav a:focus {
     flex-direction: column;
   }
   
-  .container1 .card {
+  .container .card {
     max-width: 500px;
   }
   
