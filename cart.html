@@ -24,127 +24,126 @@
         </nav>
       </div>
     </header>
- 
-    <div class="title">
-      <h1>Cart</h1>
-    </div>
-
-
-    <div class="checkout_cart">
-      <div class="list-titles">
-        <ul>
-          <li class="card_title" id="title1">Product</li>
-          <li class="card_title" id="title2">Quantity</li>
-          <li class="card_title" id="title3">Total</li>
-        </ul>
-      </div>
-
-        <div class="cart_item1">
-          <div class="cart_item1_image">
-            <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
-          </div>
-          <div class="cart_item1_name">
-            <p>Everyday Mug | Stone</p>
-          </div>
-          <div class="cart_item1_amount">
-
-            <div class="quantity-selector">
-              <span class="minus">-</span>
-              <span class="num">1</span>
-              <span class="plus">+</span>
-            </div>
-      
-            <script>
-              const plus = document.querySelector(".plus"),
-              minus = document.querySelector(".minus"),
-              num = document.querySelector(".num");
-              
-              let a = 1; 
-      
-              plus.addEventListener("click",()=>{
-                a++;
-                console.log(a);
-                num.innerText = a;
-              });
-      
-              minus.addEventListener("click",()=>{
-                if(a>1){
-                  a--;
-                  num.innerText = a;
-                }
-              });
-      
-            </script>
-
-
-          </div>
-          <div class="cart_item1_price">
-            <p>$34</p>
-          </div>
-
+            
+        <div class="title">
+          <h1>Cart</h1>
         </div>
 
 
-        <div class="cart_item2">
-          <div class="cart_item2_image">
-            <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
-          </div>
-          <div class="cart_item2_name">
-            <p>Everyday Mug | Anthracite</p>
+        <div class="checkout_cart">
+          <div class="list-titles">
+            <ul>
+              <li class="card_title" id="title1">Product</li>
+              <li class="card_title" id="title2">Quantity</li>
+              <li class="card_title" id="title3">Total</li>
+            </ul>
           </div>
 
-          <div class="cart_item2_amount">
-    
-            <div class="quantity-selector">
-              <span class="minus">-</span>
-              <span class="num">1</span>
-              <span class="plus">+</span>
+            <div class="cart_item1">
+              <div class="cart_item1_image">
+                <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
+              </div>
+              <div class="cart_item1_name">
+                <p>Everyday Mug | Stone</p>
+              </div>
+              <div class="cart_item1_amount">
+
+              <div class="quantity-selector">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="plus">+</span>
+              </div>
+          
+                <script>
+                  const plus = document.querySelector(".plus"),
+                  minus = document.querySelector(".minus"),
+                  num = document.querySelector(".num");
+                  
+                  let a = 1; 
+          
+                  plus.addEventListener("click",()=>{
+                    a++;
+                    console.log(a);
+                    num.innerText = a;
+                  });
+          
+                  minus.addEventListener("click",()=>{
+                    if(a>1){
+                      a--;
+                      num.innerText = a;
+                    }
+                  });
+          
+                </script>
+
+
+              </div>
+              <div class="cart_item1_price">
+                <p>$34</p>
+              </div>
+
             </div>
-      
-            <script>
-              const plus = document.querySelector(".plus"),
-              minus = document.querySelector(".minus"),
-              num = document.querySelector(".num");
-              
-              let a = 1; 
-      
-              plus.addEventListener("click",()=>{
-                a++;
-                console.log(a);
-                num.innerText = a;
-              });
-      
-              minus.addEventListener("click",()=>{
-                if(a>1){
-                  a--;
-                  num.innerText = a;
-                }
-              });
-      
-            </script>
 
 
-          </div>
-          <div class="cart_item2_price">
-            <p>$27</p>
-          </div>
+            <div class="cart_item2">
+              <div class="cart_item2_image">
+                <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
+              </div>
+              <div class="cart_item2_name">
+                <p>Everyday Mug | Anthracite</p>
+              </div>
+
+              <div class="cart_item2_amount">
+        
+                <div class="quantity-selector">
+                  <span class="minus">-</span>
+                  <span class="num">1</span>
+                  <span class="plus">+</span>
+                </div>
+          
+                <script>
+                  const plus = document.querySelector(".plus"),
+                  minus = document.querySelector(".minus"),
+                  num = document.querySelector(".num");
+                  
+                  let a = 1; 
+          
+                  plus.addEventListener("click",()=>{
+                    a++;
+                    console.log(a);
+                    num.innerText = a;
+                  });
+          
+                  minus.addEventListener("click",()=>{
+                    if(a>1){
+                      a--;
+                      num.innerText = a;
+                    }
+                  });
+      
+               </script>
+
+
+              </div>
+              <div class="cart_item2_price">
+                <p>$27</p>
+              </div>
+            </div>
         </div>
-    </div>
 
-    <div class="total">
-      <div class="total-price">
-        <p>Total price:<strong> $61</strong></p>
-      </div>
-        <p>Shipping & taxes calculated at checkout</p> 
-    <a href="checkout.html">
-      <button id="checkout">Check out</button></a>
+        <div class="total">
+          <div class="total-price">
+            <p id="total-price-text">Total price:<strong> $61</strong></p>
+          </div>
+            <p>Shipping & taxes calculated at checkout</p> 
+            <a href="checkout.html">
+            <button id="checkout">Check out</button></a>
+        </div>
 
-    </div>
+        <footer id="footer">
+          <p>© 2023 Fang Ceramics.</p>
+        </footer>
     
-    <div id="footer">
-      <p>© 2023 Fang Ceramics.</p>
-    </div>
- 
 
   </body>
 </html>

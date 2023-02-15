@@ -1,7 +1,14 @@
 body {
   font-family:Georgia;
   background-color: #f9f7f5;
-  height: 1380px;
+}
+
+p {
+  color:#3B3431 ;
+}
+
+h1 {
+  color: #3B3431;
 }
 
 #logoimage {
@@ -60,7 +67,7 @@ nav li {
 
 .list-titles {
   border-bottom: 1px #E3D0B5 solid;
-
+  color: #3B3431;
 }
 
 .list-titles ul {
@@ -93,9 +100,9 @@ nav li {
 
 
 .card_title {
-  font-size: larger;
+  font-size:large;
   font-weight: bolder;
-  margin-bottom:2rem;
+  margin-bottom:0.2rem;
 }
 
 .checkout_cart {
@@ -114,6 +121,7 @@ nav li {
   display:flex;
   align-items: center;
   margin-bottom: 1rem;
+  margin-top:1rem;
   align-content: space-between;
 }
 
@@ -138,7 +146,9 @@ nav li {
 
 .cart_item2 {
   display:flex;
+  align-items: center;
   margin-bottom: 1rem;
+  align-content: space-between;
 }
 
 
@@ -166,7 +176,7 @@ nav li {
 .quantity-selector {
   height: 120px;
   min-width: 80px;
-  max-width: 160px;
+  max-width: 120px;
   display:flex;
   align-items:center;
   justify-content: center;
@@ -175,23 +185,21 @@ nav li {
 .quantity-selector span {
   width: 100%;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   cursor: pointer;
 }
 
 .minus {
-  background-color: #d1bdb0;
+  background-color: #E3D0B5;
 }
 
 .plus {
-  background-color: #e0ccc0;
+  background-color: #E3D0B5;
 }
 
 .num {
   pointer-events: none;
 }
-
-
 
 
 
@@ -210,6 +218,9 @@ nav li {
   text-align: right;
 }
 
+#total-price-text {
+  font-size: larger;
+}
 
 #checkout{
   height: 50px;
@@ -257,7 +268,7 @@ input:focus {
 
 
 
-#footer {
+footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }
