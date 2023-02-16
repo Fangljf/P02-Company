@@ -153,7 +153,7 @@ nav ul li:hover ul{
   border-bottom: 6px solid #B86646;
   position: absolute;
   top: 18px;
-  left: 44px;
+  left: 50px;
   z-index: 120;
   transform: rotate(180deg);
 }
