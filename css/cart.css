@@ -201,6 +201,17 @@ nav li {
   pointer-events: none;
 }
 
+.minus1 {
+  background-color: #E3D0B5;
+}
+
+.plus1 {
+  background-color: #E3D0B5;
+}
+
+.num1 {
+  pointer-events: none;
+}
 
 
 .total {

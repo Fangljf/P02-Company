@@ -96,28 +96,28 @@
               <div class="cart_item2_amount">
         
                 <div class="quantity-selector">
-                  <span class="minus">-</span>
-                  <span class="num">1</span>
-                  <span class="plus">+</span>
+                  <span class="minus1">-</span>
+                  <span class="num1">1</span>
+                  <span class="plus1">+</span>
                 </div>
           
                 <script>
-                  const plus = document.querySelector(".plus"),
-                  minus = document.querySelector(".minus"),
-                  num = document.querySelector(".num");
+                  const plus1 = document.querySelector(".plus1"),
+                  minus1 = document.querySelector(".minus1"),
+                  num1 = document.querySelector(".num1");
                   
-                  let a = 1; 
+                  let a1 = 1; 
           
-                  plus.addEventListener("click",()=>{
-                    a++;
-                    console.log(a);
-                    num.innerText = a;
+                  plus1.addEventListener("click",()=>{
+                    a1++;
+                    console.log(a1);
+                    num1.innerText = a1;
                   });
           
-                  minus.addEventListener("click",()=>{
-                    if(a>1){
-                      a--;
-                      num.innerText = a;
+                  minus1.addEventListener("click",()=>{
+                    if(a1>1){
+                      a1--;
+                      num1.innerText = a1;
                     }
                   });
       
@@ -136,8 +136,7 @@
             <p id="total-price-text">Total price:<strong> $61</strong></p>
           </div>
             <p>Shipping & taxes calculated at checkout</p> 
-            <a href="checkout.html">
-            <button id="checkout">Check out</button></a>
+            <a href="checkout.html"><button id="checkout">Check out</button></a>
         </div>
 
         <footer id="footer">
