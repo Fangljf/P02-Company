@@ -116,6 +116,7 @@ nav a:hover, nav a:focus {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   max-width: 250px;
+  text-align: center;
 }
 
 
@@ -166,16 +167,17 @@ h3 {
   font-size:14px;
   font-weight: 600;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #ffffff;
-  background-color:#b86646;
-  border:0px;
+  color: #b86646;
+  background-color: #ffffff;
+  border:1px solid #b86646;
   border-radius: 4px;
 }
 
 .add_to_cart:hover {
-  background-color:#d79258;
+  background-color:#b86646;
   transition-property: background-color; 
   transition-duration: 0.5s;
+  color:#ffffff;
 }
 
 

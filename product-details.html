@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
-    <title>Product listing page</title>
+    <title>Product detail page</title>
     <link href="css/product-details.css" rel="stylesheet">
   </head>
 
@@ -12,11 +12,11 @@
     <header>
       <div class="container-nav">
         <div class="logo">
-          <a href="#"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
+          <a href="home.html"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
         </div>
         <nav>
           <ul>
-            <li><a href="styleguide.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="cart.html">Cart</a></li>
@@ -25,63 +25,70 @@
       </div>
     </header>
 
-    <div class="image-container">
-      <div id="main-image">
-        <img id="product-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
-      </div>
-      <div id="thumbnails">
-        <img id="thumbnails-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
-        <img id="thumbnails-second-image" src="images/product-detail-page/mug6-2.png" alt="Large Vase | Anthracite">
-      </div>
-    </div>
+    <div class="container-details">
 
-    <div class="product-details">
-      <h3>LARGE VASE | ANTHRACITE</h3>
-      <p class="price">CAD $64</p>
-      <P id="product-description">
-        Here are some descriptions of this product. Here are some descriptions of this product. Here are some descriptions of this product. 
-        Here are some descriptions of this product. Here are some descriptions of this product.  
-      </P>
-
-      <div id="property-description">
-        <img id="dishwasher-safe-icon" src="images/product-detail-page/dishwasher-safe.png" alt="dishwasher safe">
-        <p>Dishwasher safe</p>
-        <img id="microwave-safe-icon" src="images/product-detail-page/microwave-safe.png" alt="microwave safe">
-        <p>Microwave safe</p>
+      <div class="image-container">
+        <div id="main-image">
+          <img id="product-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
+        </div>
+        <div id="thumbnails">
+          <img id="thumbnails-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
+          <img id="thumbnails-second-image" src="images/product-detail-page/mug6-2.png" alt="Large Vase | Anthracite">
+        </div>
       </div>
 
-      <div id="quantity-selector">
-        <span id="minus">-</span>
-        <span id="num">1</span>
-        <span id="plus">+</span>
-      </div>
+      <div class="product-details">
+        <p class="product-title">LARGE VASE | ANTHRACITE</p>
+        <p class="price">CAD $64</p>
+        <P id="product-description">
+          Here are some descriptions of this product. Here are some descriptions of this product. Here are some descriptions of this product. 
+          Here are some descriptions of this product. 
+        </P>
 
-      <script>
-        const plus = document.querySelector("#plus"),
-        minus = document.querySelector("#minus"),
-        num = document.querySelector("#num");
-        
-        let a = 1; 
+        <div class="property-description">
+          <img class="safe-icon" src="images/product-detail-page/dishwasher-safe.png" alt="dishwasher safe">
+          <div>Dishwasher safe</div>
+        </div>
+        <div class="property-description">
+          <img class="safe-icon" src="images/product-detail-page/microwave-safe.png" alt="microwave safe">
+          <div>Microwave safe</div>
+        </div>
 
-        plus.addEventListener("click",()=>{
-          a++;
-          console.log(a);
-          num.innerText = a;
-        });
+        <div class="quantity-selector">
+          <span class="minus">-</span>
+          <span class="num">1</span>
+          <span class="plus">+</span>
+        </div>
 
-        minus.addEventListener("click",()=>{
-          if(a>1){
-            a--;
+        <script>
+          const plus = document.querySelector(".plus"),
+          minus = document.querySelector(".minus"),
+          num = document.querySelector(".num");
+          
+          let a = 1; 
+
+          plus.addEventListener("click",()=>{
+            a++;
+            console.log(a);
             num.innerText = a;
-          }
-        });
+          });
 
-      </script>
+          minus.addEventListener("click",()=>{
+            if(a>1){
+              a--;
+              num.innerText = a;
+            }
+          });
 
-      <a href="cart.html">
-      <button id="add-to-cart-big-button">Add to Cart</button></a>
+        </script>
+
+        <a href="cart.html">
+        <button id="add-to-cart-big-button">Add to Cart</button></a>
+
+      </div>
 
     </div>
+
 
     <section class="recommendation">
       <h3>YOU MAY ALSO LIKE</h3>
