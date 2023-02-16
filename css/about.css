@@ -153,7 +153,7 @@ nav ul li:hover ul{
   border-bottom: 6px solid #B86646;
   position: absolute;
   top: 18px;
-  left: 50px;
+  left: 44px;
   z-index: 120;
   transform: rotate(180deg);
 }
@@ -241,7 +241,7 @@ nav a:hover, nav a:focus {
   max-width: 50%;
 }
 
-#footer {
+footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }

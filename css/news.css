@@ -233,7 +233,7 @@ h4 {
 
 /* footer */
 
-#footer {
+footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }
@@ -256,27 +256,5 @@ h4 {
   }
   
 }
-
-
-/* interactive-button */
-
-.interactive-button {
-  height: 40px;
-  width: 120px;
-  font-size:14px;
-  font-weight: 600;
-  color: #ffffff;
-  background-color:#b86646;
-  border:0px;
-  border-radius: 4px;
-}
-
-.interactive-button:hover {
-  background-color:#d79258;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-}
-
-
 
 
