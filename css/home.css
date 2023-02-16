@@ -59,34 +59,33 @@ nav a:hover, nav a:focus {
 }
 
 .cover {
-  width: 100%;
+  max-width: 900px;
   margin-bottom: 6rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cover img {
+#cover-image {
   width: 100%;
   height: auto;
 }
 
 .cover button {
-  position: absolute;
-  top: 70%;
-  left: 75%;
-  border:1px solid #b86646;
-  color: #b86646;
-  background-color: transparent;
+  color: #ffffff;
+  background-color: #b86646;
   font-size: 16px;
-  padding: 12px 36px;
+  padding: 12px 48px;
   cursor: pointer;
   border-radius: 4px;
+  margin-top: 1rem;
+  border: none;
 }
 
 .cover button:hover {
-  background-color: #b86646;
+  background-color: #d78a6c;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  color:#ffffff;
-  position: absolute;
 }
 
 
@@ -104,6 +103,7 @@ nav a:hover, nav a:focus {
 
 .feature-text {
   max-width: 440px;
+
 }
 
 #feature-image1 {
@@ -113,6 +113,12 @@ nav a:hover, nav a:focus {
 #feature-image2 {
   max-width: 450px;
 }
+
+.subtitle {
+  line-height: 1.5rem;
+  color: #635B50;
+}
+
 
 .container {
   display: flex;
@@ -187,23 +193,77 @@ h3 {
 
 
 
-
-
 #footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }
 
-@media (max-width:520px) {
+@media (max-width:560px) {
   .container-nav {
     text-align: center;
     flex-direction: column;
   }
   
-  .container1 .card {
-    max-width: 500px;
+  .container .card {
+    max-width: 540px;
   }
   
+  .feature-text {
+    max-width: 560px;
+  }
+  
+  #feature-image1 {
+    max-width: 560px;
+    width: 100%;
+  }
+  
+  #feature-image2 {
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .feature-image {
+    order:1;
+  }
+
+  .feature-text {
+    order:2;
+  }
+  
+  #cover-image {
+    width: 100%;
+    height: auto;
+    margin-top:5.5rem;
+  }
+
+}
+
+@media (max-width:798px) {
+
+  .feature-text {
+    max-width: 798px;
+  }
+  
+  #feature-image1 {
+    max-width: 798px;
+    width: 100%;
+  }
+  
+  #feature-image2 {
+    max-width: 798px;
+    width: 100%;
+  }
+
+  .feature-image {
+    order:1;
+  }
+
+  .feature-text {
+    order:2;
+  }
+
+
+
 }
 
 
