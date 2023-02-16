@@ -136,15 +136,15 @@ nav ul li ul li{
   box-shadow: 0 4px 16px #efedec;
 }
 
-nav ul li ul li a:hover{
-  font-weight: bold;
-}
-
 nav ul li:hover ul{
   display: block;
 }
 
-nav ul li ul li:first-child>a:before{
+
+
+
+
+.triangle {
   content: "";
   display: block;
   width: 0;
