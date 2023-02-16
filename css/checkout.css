@@ -204,8 +204,6 @@ input[type="radio"] {
 }
 
 .pickup-address {
-  padding-left: 1.6rem;
-  font-size: smaller;
   color: #635B50;
 }
 
@@ -269,14 +267,10 @@ input[type=month] {
 }
 
 #radio-payment-method {
-  margin: 1.2em;
-  display: flex;
-  flex-wrap: wrap;
+margin-bottom: 1.5rem;
+display: flex;
 }
 
-.payment-method {
-  margin-right: 2rem;
-}
 
 .back-icon {
 width: 16px;
@@ -417,7 +411,6 @@ width: 16px;
 .sub-total {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E3D0B5;
 }
 
 #subtotal {

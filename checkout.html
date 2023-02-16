@@ -31,7 +31,7 @@
         <h4>Pickup locations</h4>
         <div class="pickup-location-1">
           <input class="radio-type" type="radio" id="pickup-location1" name="pickup-location" value="1">
-          <label for="pickup-location1">Burnaby Studio <p class="pickup-address">1654 Eagles Dr, Burnaby BC</p>
+          <label for="pickup-location1" class="pickup-address">1654 Eagles Dr, Burnaby BC</p>
           </label>
         </div>
 
@@ -84,7 +84,8 @@
 
         <div class="bottom-actions">
           <a href="cart.html" class="in-text-link"><img class="back-icon" src="images/checkout-page/back.png" alt="Back">Return to cart</a>
-          <a href="result.html"><button id="buy-now">Buy now</button></a>
+          <input type="button" id="buy-now" onclick="location.href='result.html'" value="buy now">
+
         </div>
 
       </div>
