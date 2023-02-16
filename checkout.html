@@ -19,34 +19,42 @@
         <h4>Delivery method</h4>
         <div class="delivery-method">
           <div class="delivery-method-box">
-            <input type="radio" id="delivery-method1" name="delivery-method" value="1">
+            <input class="radio-type" type="radio" id="delivery-method1" name="delivery-method" value="1">
             <label for="delivery-method1"><img class="icon-delivery" src="images/checkout-page/ship.png" alt="Ship">Ship</label>
           </div>
           <div class="delivery-method-box">
-            <input type="radio" id="delivery-method2" name="delivery-method" value="2">
+            <input class="radio-type" type="radio" id="delivery-method2" name="delivery-method" value="2">
             <label for="delivery-method2"><img class="icon-delivery" src="images/checkout-page/pickup.png" alt="Pickup">Pick up</label>
           </div>
         </div>
 
         <h4>Pickup locations</h4>
         <div class="pickup-location-1">
-          <input type="radio" id="pickup-location1" name="pickup-location" value="1">
+          <input class="radio-type" type="radio" id="pickup-location1" name="pickup-location" value="1">
           <label for="pickup-location1">Burnaby Studio <p class="pickup-address">1654 Eagles Dr, Burnaby BC</p>
           </label>
         </div>
 
         <h4>Choose your payment method</h4>
-        <div id="radio">
-          <label class="payment-method">
-            <input type="radio" name="method" value="1">Credit card
-          </label>
-          <label class="payment-method">
-            <input type="radio" name="method" value="2">PayPal
-          </label>
-          <label>
-            <input type="radio" name="method" value="3" disabled>WeChat
-          </label>
+        <div id="radio-payment-method">
+
+          <div>
+            <input class="radio-type" type="radio" id="credit-card" name="payment-method" value="1">
+            <label for="credit-card">Credit card</label>
+          </div>
+
+          <div>
+            <input class="radio-type" type="radio" id="PayPal" name="payment-method"  value="2">  
+            <label for="PayPal"> PayPal</label>
+          </div>
+
+          <div>
+            <input class="radio-type-disabled" type="radio" id="wechat" name="payment-method" disabled>
+            <label for="wechat">Wechat</label>
+          </div>
+
         </div>
+
         <div id="other-input">
           <label>
             First name<br>

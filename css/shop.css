@@ -1,18 +1,59 @@
+/* font */
 
 @font-face {
-  font-family: Raleway-Italic;
-  src: url(fonts/Raleway-Italic.ttf);
-  }
+  font-family: PlayfairDisplay-Regular;
+  src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Medium;
+  src: url(fonts/PlayfairDisplay-Medium.ttf);
+}
+@font-face {
+  font-family: PlayfairDisplay-SemiBold;
+  src: url(fonts/PlayfairDisplay-SemiBold.ttf);
+}
+
+@font-face {
+font-family: PlayfairDisplay-Italic-VariableFont_wght;
+src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-VariableFont_wght;
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(fonts/Raleway-Regular.ttf);
+}
   
-  @font-face {
-  font-family: Raleway-Light;
-  src: url(fonts/Raleway-Light.ttf);
-  }
-  
+@font-face {
+font-family: Raleway-Italic;
+src: url(fonts/Raleway-Italic.ttf);
+}
+
+@font-face {
+font-family: Raleway-Light;
+src: url(fonts/Raleway-Light.ttf);
+}
+
 body {
-  font-family:Raleway-Light;
+  font-family: Raleway-Regular;
   background-color: #f9f7f5;
 }
+
+h1, h2{
+  font-family: PlayfairDisplay-Medium;
+}
+
+h3{
+  font-family: PlayfairDisplay-Regular;
+}
+/* font(end)*/
+
+
 header {
   position: fixed;
   z-index: 101;
@@ -175,7 +216,6 @@ line-height: 1.5rem;
 }
 
 h3 {
-  font-style: italic;
   font-size: larger;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -196,10 +236,12 @@ nav a:hover, nav a:focus {
 
 .imagelink:hover {
   opacity:0.7; 
+  cursor: pointer;
 }
 
 .imagelink:focus {
   opacity:0.7;
+  cursor: pointer;
 }
 
 
@@ -223,7 +265,6 @@ nav a:hover, nav a:focus {
   width: 120px;
   font-size:14px;
   font-weight: 600;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #b86646;
   background-color: #ffffff;
   border:1px solid #b86646;

@@ -40,7 +40,6 @@ src: url(fonts/Raleway-Light.ttf);
 
 body {
   font-family: 'Raleway-Regular';
-  padding: 2rem;
   background-color: #f9f7f5;
 }
 
@@ -197,8 +196,7 @@ nav ul li ul li:first-child>a:before{
 }
 
 .feature-text {
-  max-width: 440px;
-
+  width: 43%;
 }
 
 #feature-image1 {
@@ -272,7 +270,6 @@ h3 {
   width: 120px;
   font-size:14px;
   font-weight: 600;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #b86646;
   background-color: #ffffff;
   border:1px solid #b86646;
@@ -337,6 +334,7 @@ h3 {
 
   .feature-text {
     max-width: 798px;
+    width: 100%;
   }
   
   #feature-image1 {

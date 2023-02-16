@@ -1,7 +1,59 @@
+/* font */
+
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Medium;
+  src: url(fonts/PlayfairDisplay-Medium.ttf);
+}
+@font-face {
+  font-family: PlayfairDisplay-SemiBold;
+  src: url(fonts/PlayfairDisplay-SemiBold.ttf);
+}
+
+@font-face {
+font-family: PlayfairDisplay-Italic-VariableFont_wght;
+src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-VariableFont_wght;
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(fonts/Raleway-Regular.ttf);
+}
+  
+@font-face {
+font-family: Raleway-Italic;
+src: url(fonts/Raleway-Italic.ttf);
+}
+
+@font-face {
+font-family: Raleway-Light;
+src: url(fonts/Raleway-Light.ttf);
+}
+
 body {
-  font-family:Georgia;
+  font-family: Raleway-Regular;
   background-color: #f9f7f5;
 }
+
+h1, h2{
+  font-family: PlayfairDisplay-Medium;
+}
+
+h3{
+  font-family: PlayfairDisplay-Regular;
+}
+/* font(end)*/
+
+
 
 #logoimage {
   height: 26px;
@@ -44,10 +96,86 @@ header {
 }
 
 
+/* Radio with Label[pseudo-element] */
 input[type="radio"] {
   width:16px;
   height: 16px;
+  border: none;
+  margin: 10px;
 }
+
+.radio-container {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+
+.radio-type {
+  appearance: none;
+  position: relative;
+}
+
+.radio-type:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #7C6354;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.radio-type:checked:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #B86646;
+  background:#B86646;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.radio-type:checked:after{
+  content: '';
+  width: 10px;
+  height:5px;
+  border: 2px solid white;
+  border-top: transparent;
+  border-right: transparent;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  vertical-align: middle;
+  transform: rotate(-45deg);
+}
+
+.radio-type:checked+label{
+  color: #B86646;
+}
+
+/* [Disabled] Radio with Label[pseudo-element] */
+
+.radio-type-disabled {
+  appearance: none;
+  position: relative;
+}
+
+.radio-type-disabled:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #7C6354;
+  background-color: #7C6354;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+
+
+
 
 .icon-delivery {
   width: 18px;
@@ -79,10 +207,6 @@ input[type="radio"] {
   padding-left: 1.6rem;
   font-size: smaller;
   color: #635B50;
-}
-
-#radio {
-  margin-bottom: 1rem;
 }
 
 h3 {
@@ -120,28 +244,34 @@ input:focus {
 
 
 input::placeholder {
-  font-family:Georgia;
+  font-family:Raleway-Regular;
   font-size: 14px;
   color: #c6c6c5;
   padding-left: 0.4rem;
 }
 
 input[type=text] {
-  font-family:Georgia;
+  font-family:Raleway-Regular;
   font-size: 16px;
   max-width: 100%;  
 }
 
 input[type=number] {
-  font-family:Georgia;
+  font-family:Raleway-Regular;
   font-size: 16px;
   max-width: 100%;  
 }
 
 input[type=month] {
-  font-family:Georgia;
+  font-family:Raleway-Regular;
   font-size: 16px;
   max-width: 100%;  
+}
+
+#radio-payment-method {
+  margin: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .payment-method {
@@ -179,7 +309,7 @@ width: 16px;
   width: 160px;
   font-size: large;
   font-weight: 600;
-  font-family:Georgia;
+  font-family:Raleway-Regular;
   color: #ffffff;
   background-color:#b86646;
   border:0px;
@@ -251,7 +381,7 @@ width: 16px;
 }
 
 .right-column input[type=number] {
-  font-family:Georgia;
+  font-family:Raleway-Regular;
   font-size: 14px;
   max-width: 66%;  
 }
@@ -271,7 +401,7 @@ width: 16px;
   margin-top:-1rem;
   font-size: medium;
   font-weight: 500;
-  font-family:Georgia;
+  font-family:Raleway-Regular;
   color: #ffffff;
   background-color:#b86646;
   border:0px;
