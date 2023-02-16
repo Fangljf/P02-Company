@@ -56,10 +56,13 @@ h3{
 
 /* font(end)*/
 
-/* Navigation(start) 
+/* Navigation(start) */
 header {
   position: fixed;
+  z-index: 101;
   top:0;
+  left: 0;
+  right: 0;
   background-color: #f9f7f5;
   width: 100%;
   box-shadow: 0 4px 16px #efedec;
@@ -109,6 +112,10 @@ nav li {
   float: left;
 }
 
+nav ul li{
+  line-height: 40px;
+}
+
 nav ul li ul{
   display: none;
   position: absolute;
@@ -121,19 +128,37 @@ nav ul li ul li{
   margin: 0.8em;
   width: 7em;
   text-align: left;
-} 
+}
 
-
-
-nav ul li ul li a:hover{
-  color: white;
-  background: #7C6354;
+.secondary-style{
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #efedec;
 }
 
 nav ul li:hover ul{
   display: block;
 }
-/* Navigation(start) */
+
+
+
+
+
+.triangle {
+  content: "";
+  display: block;
+  width: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #B86646;
+  position: absolute;
+  top: 18px;
+  left: 50px;
+  z-index: 120;
+  transform: rotate(180deg);
+}
+/* Navigation(end) */
+
 
 /* Content */
 
@@ -143,15 +168,6 @@ nav ul li:hover ul{
   margin: auto;
 }
 
-
-.secondary-nav  {
-  padding-top: 10rem;
-}
-
-.secondary-nav a {
-  padding: 0.3rem;
-}
-
 .title {
   text-align: center;
   margin-bottom: 4em;
@@ -159,43 +175,15 @@ nav ul li:hover ul{
 }
 
 
-
-.secondary-selector-checked {
-  display: inline-block;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  color: #ffffff;
-  text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  background-color: #7C6354;
-  border-radius: 4px;
+.category {
+  width:90%;
+  max-width: 900px;
+  margin: 2em auto;
 }
 
-.secondary-selector-checked:hover, .secondary-selector-checked:focus {
-  background-color: #a38c7f;
-}
-
-
-.secondary-selector-unchecked {
-  display: inline-block;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  color: #7C6354;
-  text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  background-color: #ffffff;
-  border-radius: 4px;
-}
-
-.secondary-selector-unchecked:hover, .secondary-selector-unchecked:focus {
-  background-color: #7C6354;
-  color: #ffffff;
+.mug {
+  max-width: 100%;
+  display: block;
 }
 
 
@@ -206,8 +194,8 @@ nav ul li:hover ul{
   padding-bottom: 1em;
   padding-top: .6em;
   border-top-width: 0.1em;
-  border-top-style: solid;
-  border-top-color: #b86646;
+  /* border-top-style: solid;
+  border-top-color: #b86646; */
 }
 
 p {
@@ -215,7 +203,6 @@ line-height: 1.5rem;
 }
 
 h3 {
-  font-style: italic;
   font-size: larger;
   margin-top: 2rem;
   margin-bottom: 1rem;
