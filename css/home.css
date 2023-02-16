@@ -19,6 +19,16 @@ nav a:focus {
   border-bottom: 2px solid #7c6354;
 }
 
+
+
+header {
+  position:fixed;
+  top:0;
+  background-color: #f9f7f5;
+  width: 100%;
+  box-shadow: 0 4px 16px #efedec;
+}
+
 .container-nav {
   max-width: 900px;
   width: 90%;
@@ -29,15 +39,6 @@ nav a:focus {
   display:flex;
   justify-content: space-between;
   align-items: center;
-}
-
-
-header {
-  position: fixed;
-  top:0;
-  background-color: #f9f7f5;
-  width: 100%;
-  box-shadow: 0 4px 16px #efedec;
 }
 
 
@@ -53,20 +54,67 @@ nav li {
 }
 
 
-.title {
-  text-align: center;
-  margin-bottom: 4rem;
-  margin-top: 9rem;
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+.cover {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.cover img {
+  width: 100%;
+  height: auto;
+}
+
+.cover button {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  border:1px solid #b86646;
+  color: #b86646;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 12px 36px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cover button:hover {
+  background-color: #b86646;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  color:#ffffff;
+  position: absolute;
 }
 
 
-.category {
-  width:90%;
+
+.features {
   max-width: 900px;
-  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
 }
 
-.container1 {
+.feature-text {
+  max-width: 440px;
+}
+
+#feature-image1 {
+  max-width: 450px;
+}
+
+#feature-image2 {
+  max-width: 450px;
+}
+
+.container {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
@@ -76,7 +124,7 @@ nav li {
   width: 100%;
 }
 
-.container1 .card {
+.container .card {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
@@ -85,39 +133,22 @@ nav li {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   max-width: 250px;
+  text-align: center;
 }
-
 
 .mug {
   max-width: 100%;
   display: block;
 }
 
-.description {
-  max-width: 900px;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
-  border-top-width: 0.1rem;
-  border-top-style: solid;
-  border-top-color: #b86646;
-}
 
-p {
-line-height: 1.5rem;
-}
 
 h3 {
-  font-style: italic;
   font-size: larger;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
   color: #b86646;
-}
-
-
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
+  text-align: center;
 }
 
 
@@ -135,38 +166,25 @@ nav a:hover, nav a:focus {
 }
 
 
-.in-text-link {
-  color:#b86646
-}
-
-.in-text-link:hover {
-  color:#d79258
-}
-
-.in-text-link:focus {
-  color:#d79258
-}
-
-
-
-
 .add_to_cart {
   height: 40px;
   width: 120px;
   font-size:14px;
   font-weight: 600;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #ffffff;
-  background-color:#b86646;
-  border:0px;
+  color: #b86646;
+  background-color: #ffffff;
+  border:1px solid #b86646;
   border-radius: 4px;
 }
 
 .add_to_cart:hover {
-  background-color:#d79258;
+  background-color:#b86646;
+  color:#ffffff;
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
+
 
 
 
