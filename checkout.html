@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Check out page</title>
     <link href="css/checkout.css" rel="stylesheet">
   </head>
@@ -31,24 +31,24 @@
         <h4>Pickup locations</h4>
         <div class="pickup-location-1">
           <input class="radio-type" type="radio" id="pickup-location1" name="pickup-location" value="1">
-          <label for="pickup-location1">Burnaby Studio <p class="pickup-address">1654 Eagles Dr, Burnaby BC</p>
+          <label for="pickup-location1" class="pickup-address">1654 Eagles Dr, Burnaby BC
           </label>
         </div>
 
         <h4>Choose your payment method</h4>
         <div id="radio-payment-method">
 
-          <div>
+          <div class="payment-radio">
             <input class="radio-type" type="radio" id="credit-card" name="payment-method" value="1">
             <label for="credit-card">Credit card</label>
           </div>
 
-          <div>
+          <div class="payment-radio">
             <input class="radio-type" type="radio" id="PayPal" name="payment-method"  value="2">  
             <label for="PayPal"> PayPal</label>
           </div>
 
-          <div>
+          <div class="payment-radio">
             <input class="radio-type-disabled" type="radio" id="wechat" name="payment-method" disabled>
             <label for="wechat">Wechat</label>
           </div>
@@ -84,7 +84,8 @@
 
         <div class="bottom-actions">
           <a href="cart.html" class="in-text-link"><img class="back-icon" src="images/checkout-page/back.png" alt="Back">Return to cart</a>
-          <a href="result.html"><button id="buy-now">Buy now</button></a>
+          <input type="button" id="buy-now" onclick="location.href='result.html'" value="buy now">
+
         </div>
 
       </div>
@@ -121,7 +122,8 @@
 
           <div class="discount">
               <input type="number" name="discount-code" placeholder="Gift card or discount code">
-              <button id="apply">Apply</button>
+              <input type="button" id="apply" value="Apply">
+
           </div>
 
           <div class="sub-total">
@@ -149,9 +151,9 @@
     </div>
 
     
-    <div id="footer">
+    <footer>
       <p>© 2023 Fang Ceramics.</p>
-    </div>
+    </footer>
  
 
   </body>
