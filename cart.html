@@ -4,134 +4,151 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
-    <title>Checkout page</title>
-    <link href="css/checkout.css" rel="stylesheet">
+    <title>Cart</title>
+    <link href="css/cart.css" rel="stylesheet">
   </head>
 
   <body>
     <header>
       <div class="container-nav">
         <div class="logo">
-          <a href="#"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
+          <a href="home.html"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
         </div>
         <nav>
           <ul>
-            <li><a href="styleguide.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="cart.html">Cart</a></li>
+            <li><a href="home.html">Home</a ></li>
+            <li><a href="shop.html">Shop</a ></li>
+            <li><a href="about.html">About</a >
+              <ul class="secondary-style">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li><a href="cart.html">Cart</a ></li>
           </ul>
         </nav>
       </div>
     </header>
- 
-
-      <div class="checkout_cart">
-        <p class="card_title">Shopping cart</p>
-        <div class="cart_item1">
-          <div class="cart_item1_image">
-            <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
-          </div>
-          <div class="cart_item1_name">
-            <p>Everyday Mug | Stone</p>
-          </div>
-          <div class="cart_item1_amount">
-            <p>1</p>
-          </div>
-          <div class="cart_item1_price">
-            <p>$34</p>
-          </div>
-
+            
+        <div class="title">
+          <h1>Cart</h1>
         </div>
 
 
-        <div class="cart_item2">
-          <div class="cart_item2_image">
-            <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
+        <div class="checkout_cart">
+          <div class="list-titles">
+            <ul>
+              <li class="card_title" id="title1">Product</li>
+              <li class="card_title" id="title2">Quantity</li>
+              <li class="card_title" id="title3">Total</li>
+            </ul>
           </div>
-          <div class="cart_item2_name">
-            <p>Everyday Mug | Anthracite</p>
-          </div>
-          <div class="cart_item2_amount">
-            <p>1</p>
-          </div>
-          <div class="cart_item2_price">
-            <p>$27</p>
-          </div>
+
+            <div class="cart_item1">
+              <div class="cart_item1_image">
+                <img src="images/mug1.png" alt="Everyday Mug | Stone" class="cart_image">
+              </div>
+              <div class="cart_item1_name">
+                <p>Everyday Mug | Stone</p>
+              </div>
+              <div class="cart_item1_amount">
+
+              <div class="quantity-selector">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="plus">+</span>
+              </div>
+          
+                <script>
+                  const plus = document.querySelector(".plus"),
+                  minus = document.querySelector(".minus"),
+                  num = document.querySelector(".num");
+                  
+                  let a = 1; 
+          
+                  plus.addEventListener("click",()=>{
+                    a++;
+                    console.log(a);
+                    num.innerText = a;
+                  });
+          
+                  minus.addEventListener("click",()=>{
+                    if(a>1){
+                      a--;
+                      num.innerText = a;
+                    }
+                  });
+          
+                </script>
+
+
+              </div>
+              <div class="cart_item1_price">
+                <p>$34</p>
+              </div>
+
+            </div>
+
+
+            <div class="cart_item2">
+              <div class="cart_item2_image">
+                <img src="images/mug2.png" alt="Everyday Mug | Anthracite" class="cart_image">
+              </div>
+              <div class="cart_item2_name">
+                <p>Everyday Mug | Anthracite</p>
+              </div>
+
+              <div class="cart_item2_amount">
+        
+                <div class="quantity-selector">
+                  <span class="minus1">-</span>
+                  <span class="num1">1</span>
+                  <span class="plus1">+</span>
+                </div>
+          
+                <script>
+                  const plus1 = document.querySelector(".plus1"),
+                  minus1 = document.querySelector(".minus1"),
+                  num1 = document.querySelector(".num1");
+                  
+                  let a1 = 1; 
+          
+                  plus1.addEventListener("click",()=>{
+                    a1++;
+                    console.log(a1);
+                    num1.innerText = a1;
+                  });
+          
+                  minus1.addEventListener("click",()=>{
+                    if(a1>1){
+                      a1--;
+                      num1.innerText = a1;
+                    }
+                  });
+      
+               </script>
+
+
+              </div>
+              <div class="cart_item2_price">
+                <p>$27</p>
+              </div>
+            </div>
         </div>
 
         <div class="total">
-          <div class="total-amount">
-            <p>Total amount: 2</p>
-          </div>
           <div class="total-price">
-            <p>Total price:<strong> $61</strong></p>
+            <p id="total-price-text">Total price:<strong> $61</strong></p>
           </div>
+            <p>Shipping & taxes calculated at checkout</p> 
+            <a href="checkout.html"><button id="checkout">Check out</button></a>
         </div>
 
-      </div>
-
-
-
-    <div id="payment-form">
-      <p class="card_title">Choose your payment method:</p>
-
-      <div id="radio">
-        <label class="payment-method">
-          <input type="radio" name="method" value="1">Credit card
-        </label>
-        <label class="payment-method">
-          <input type="radio" name="method" value="2">PayPal
-        </label>
-        <label>
-          <input type="radio" name="method" value="3" disabled>WeChat
-        </label>
-      </div>
-      
-      <div id="other-input">
-        <label>
-          First name<br>
-          <input type="text" name="fname" placeholder="Enter here">
-        </label><br>
-
-        <label>
-          Last name<br>
-          <input type="text" name="lname" placeholder="Enter here">
-        </label><br>
-
-        <label>
-          Credit card number<br>
-          <input type="number" name="cardnumber" placeholder="Enter here">
-        </label><br>
-
-        <label>
-          Security code<br>
-          <input type="number" name="securitycode" placeholder="Enter 3-digit code">
-        </label><br>
-
-        <label>
-          Card expiration<br>
-          <input type="month" name="cardexpiration">
-        </label><br>
-      </div>
-
-      <input type="submit" value="Submit">
-
-    </div>
-
-
-
-
-
-
-
-  
-
-
+        <footer id="footer">
+          <p>© 2023 Fang Ceramics.</p>
+        </footer>
     
-    <div id="footer">
-      <p>© 2023 Fang Ceramics.</p>
-    </div>
- 
 
   </body>
 </html>
