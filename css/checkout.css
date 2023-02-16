@@ -86,6 +86,7 @@ header {
   padding-right: 2rem;
   padding-left: 2rem;
   flex:2;
+  order:1;
   min-width: 380px;
 }
 
@@ -93,6 +94,7 @@ header {
   padding-left: 2rem;
   padding-right: 2rem;
   flex:1;
+  order:2;
 }
 
 
@@ -101,7 +103,7 @@ input[type="radio"] {
   width:16px;
   height: 16px;
   border: none;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .radio-container {
@@ -200,12 +202,18 @@ input[type="radio"] {
   border-radius: 4px;
   padding-left:1rem;
   padding-top:1rem;
+  padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 
 .pickup-address {
   color: #635B50;
 }
+
+.payment-radio {
+  margin-right: 2rem;
+}
+
 
 h3 {
   font-style: italic;
@@ -303,7 +311,7 @@ width: 16px;
   width: 160px;
   font-size: large;
   font-weight: 600;
-  font-family:Raleway-Regular;
+  font-family:Raleway;
   color: #ffffff;
   background-color:#b86646;
   border:0px;
@@ -392,7 +400,6 @@ width: 16px;
 #apply{
   height: 40px;
   width:30%;
-  margin-top:-1rem;
   font-size: medium;
   font-weight: 500;
   font-family:Raleway-Regular;
@@ -400,6 +407,7 @@ width: 16px;
   background-color:#b86646;
   border:0px;
   border-radius: 4px;
+  font-family: raleway;
 }
 
 #apply:hover {
@@ -446,16 +454,30 @@ width: 16px;
 
 
 
-#footer {
+footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }
 
-@media (max-width:520px) {
-  .container-nav {
-    text-align: center;
-    flex-direction: column;
+@media (max-width:668px) {
+  .left-column {
+    border-right:none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    flex:2;
+    order:2;
+    min-width: 380px;
   }
+  
+  .right-column {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex:1;
+    order:1;
+    min-width: 380px;
+    padding-bottom: 2rem;
+  }
+  
   
 
 }

@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Check out page</title>
     <link href="css/checkout.css" rel="stylesheet">
   </head>
@@ -38,17 +38,17 @@
         <h4>Choose your payment method</h4>
         <div id="radio-payment-method">
 
-          <div>
+          <div class="payment-radio">
             <input class="radio-type" type="radio" id="credit-card" name="payment-method" value="1">
             <label for="credit-card">Credit card</label>
           </div>
 
-          <div>
+          <div class="payment-radio">
             <input class="radio-type" type="radio" id="PayPal" name="payment-method"  value="2">  
             <label for="PayPal"> PayPal</label>
           </div>
 
-          <div>
+          <div class="payment-radio">
             <input class="radio-type-disabled" type="radio" id="wechat" name="payment-method" disabled>
             <label for="wechat">Wechat</label>
           </div>
@@ -122,7 +122,8 @@
 
           <div class="discount">
               <input type="number" name="discount-code" placeholder="Gift card or discount code">
-              <button id="apply">Apply</button>
+              <input type="button" id="apply" value="Apply">
+
           </div>
 
           <div class="sub-total">
@@ -150,9 +151,9 @@
     </div>
 
     
-    <div id="footer">
+    <footer>
       <p>© 2023 Fang Ceramics.</p>
-    </div>
+    </footer>
  
 
   </body>

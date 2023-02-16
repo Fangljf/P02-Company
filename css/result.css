@@ -169,7 +169,7 @@ nav ul li ul li:first-child>a:before{
 #continue-shopping{
   height: 50px;
   width: 220px;
-  font-family: Raleway-Regular;
+  font-family: Raleway;
   font-size: large;
   font-weight: 600;
   color: #ffffff;
@@ -181,7 +181,6 @@ nav ul li ul li:first-child>a:before{
 
 #continue-shopping:hover {
   background-color:#d79258;
-  font-family: Raleway-Regular;
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
@@ -268,6 +267,7 @@ h3 {
   background-color: #ffffff;
   border:1px solid #b86646;
   border-radius: 4px;
+  font-family: Raleway;
 }
 
 .add_to_cart:hover {
@@ -279,7 +279,7 @@ h3 {
 
 
 
-#footer {
+footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }

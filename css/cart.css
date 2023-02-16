@@ -341,6 +341,7 @@ nav ul li ul li:first-child>a:before{
   background-color:#b86646;
   border:0px;
   border-radius: 4px;
+  font-family: raleway;
 }
 
 #checkout:hover {
