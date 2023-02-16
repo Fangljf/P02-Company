@@ -165,7 +165,7 @@ nav ul li ul li:first-child>a:before{
   height: auto;
 }
 
-.cover button {
+.cover input[type="button"] {
   color: #ffffff;
   background-color: #b86646;
   font-size: 16px;
@@ -174,9 +174,10 @@ nav ul li ul li:first-child>a:before{
   border-radius: 4px;
   margin-top: 1rem;
   border: none;
+  font-family: raleway;
 }
 
-.cover button:hover {
+.cover input[type="button"]:hover {
   background-color: #d78a6c;
   transition-property: background-color; 
   transition-duration: 0.5s;
@@ -274,6 +275,7 @@ h3 {
   background-color: #ffffff;
   border:1px solid #b86646;
   border-radius: 4px;
+  font-family: raleway;
 }
 
 .add_to_cart:hover {
@@ -285,7 +287,7 @@ h3 {
 
 
 
-#footer {
+footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }
