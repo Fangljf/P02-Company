@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
+    <title>Product detail page</title>
+    <link href="css/product-details-2.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container-nav">
+        <div class="logo">
+          <a href="home.html"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a ></li>
+            <li><a href="shop.html">Shop</a ></li>
+            <li><a href="about.html">About</a >
+              <ul class="secondary-style">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li><a href="cart.html">Cart</a ></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container-details">
+
+      <div class="image-container">
+        <div id="main-image">
+          <img id="product-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
+        </div>
+        <div id="thumbnails">
+          <img id="thumbnails-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
+          <img id="thumbnails-second-image" src="images/product-detail-page/mug6-2.png" alt="Large Vase | Anthracite">
+        </div>
+      </div>
+
+      <div class="product-details">
+        <p class="product-title">LARGE VASE | ANTHRACITE</p>
+        <p class="price">CAD $64</p>
+        <P id="product-description">
+          Here are some descriptions of this product. Here are some descriptions of this product. Here are some descriptions of this product. 
+          Here are some descriptions of this product. 
+        </P>
+
+        <div class="property-description">
+          <img class="safe-icon" src="images/product-detail-page/dishwasher-safe.png" alt="dishwasher safe">
+          <div>Dishwasher safe</div>
+        </div>
+        <div class="property-description">
+          <img class="safe-icon" src="images/product-detail-page/microwave-safe.png" alt="microwave safe">
+          <div>Microwave safe</div>
+        </div>
+
+        <div class="quantity-selector">
+          <span class="minus">-</span>
+          <span class="num">1</span>
+          <span class="plus">+</span>
+        </div>
+
+        <script>
+          const plus = document.querySelector(".plus"),
+          minus = document.querySelector(".minus"),
+          num = document.querySelector(".num");
+          
+          let a = 1; 
+
+          plus.addEventListener("click",()=>{
+            a++;
+            console.log(a);
+            num.innerText = a;
+          });
+
+          minus.addEventListener("click",()=>{
+            if(a>1){
+              a--;
+              num.innerText = a;
+            }
+          });
+
+        </script>
+        <!--Knowledge about js - quantity selector is from https://www.youtube.com/watch?v=uliYkHK3pKg -->
+
+        <input type="button" id="add-to-cart-big-button" onclick="location.href='cart.html'" value="Add to Cart">
+
+      </div>
+
+    </div>
+
+
+    <section class="recommendation">
+      <h3>YOU MAY ALSO LIKE</h3>
+      <div class="container1">
+        <div class="card">
+          <a href="product-details-1.html">
+          <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite"></a>
+          <h4>Dinner Bowl | Anthracite</h4>
+          <p>$62</p>
+            <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+
+
+        </div>
+
+        <div class="card">
+          <a href="product-details-1.html">
+          <img class="mug" src="images/mug4.png" alt="Bud Vase | Stone"></a>
+          <h4>Bud Vase | Stone</h4>
+          <p>$50</p>
+          <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+
+        </div>
+        
+        <div class="card">
+          <a href="product-details-1.html">
+          <img class="mug" src="images/mug5.png" alt="Breakfast Bowl | Stone"></a>
+          <h4>Breakfast Bowl | Stone</h4>
+          <p>$37</p>
+          <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+
+        </div>
+
+      </div>
+
+    </section>
+    
+    <footer>
+      <p>© 2023 Fang Ceramics.</p>
+    </footer>
+ 
+
+  </body>
+</html>
