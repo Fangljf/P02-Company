@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: 'PlayfairDisplay-Regular';
   src: url(fonts/PlayfairDisplay-Regular.ttf);
 }
@@ -37,6 +37,7 @@ src: url(fonts/Raleway-Italic.ttf);
 font-family: 'Raleway-Light';
 src: url(fonts/Raleway-Light.ttf);
 }
+*/
 
 body {
   font-family: 'Raleway-Regular';
@@ -152,6 +153,15 @@ nav ul li ul li:first-child>a:before{
 }
 
 
+#cover-image {
+  height: 75vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/*Got the knowledge of object-fit from:https://www.youtube.com/watch?v=6yAAV-uP0po */
+
 .cover {
   max-width: 900px;
   margin-bottom: 6rem;
@@ -160,10 +170,6 @@ nav ul li ul li:first-child>a:before{
   margin-right: auto;
 }
 
-#cover-image {
-  width: 100%;
-  height: auto;
-}
 
 .cover input[type="button"] {
   color: #ffffff;
@@ -181,6 +187,7 @@ nav ul li ul li:first-child>a:before{
   background-color: #d78a6c;
   transition-property: background-color; 
   transition-duration: 0.5s;
+  cursor: pointer;
 }
 
 
@@ -217,29 +224,45 @@ nav ul li ul li:first-child>a:before{
 .container {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
   flex-wrap: wrap;
   justify-content:center;
-  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 910px;
+
 }
 
-.container .card {
+.card {
+  width: 28%;
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  max-width: 250px;
+  transition: .4s;
+  margin: 0.5rem;
   text-align: center;
 }
 
+.card:hover{
+  box-shadow: 0 4px 16px #efd5c9;
+  transform: translate(0px,-8px);
+}
+
+/* Got the knowledge of transform from: https://www.youtube.com/watch?v=kRs3aTi3pzU&list=RDCMUCftpQ1d4SbYDrv6MfCel_iw&start_radio=1&rv=kRs3aTi3pzU&t=83 */
 
 .mug {
-  max-width: 100%;
+  max-width: 250px;
+  min-width: 200px;
+  min-height: 200px;
+  position:relative;
+  margin:0 auto;
   display: block;
+  text-align: center;  
+  object-fit:cover;
+  object-position: top center;
 }
 
 .mug:hover {
@@ -270,6 +293,7 @@ h3 {
   border:1px solid #b86646;
   border-radius: 4px;
   font-family: raleway;
+  cursor: pointer;
 }
 
 .add_to_cart:hover {
@@ -286,18 +310,34 @@ footer {
   text-align: center;
 }
 
-@media (max-width:560px) {
+
+
+@media only screen and (min-width:300px) and (max-width:560px) {
+
   .container-nav {
     text-align: center;
     flex-direction: column;
   }
   
-  .container .card {
-    max-width: 540px;
+
+  .card {
+    width: 100%;
   }
-  
+
+  .mug {
+    max-width: 96%;
+    min-width: 228px;
+    min-height: 228px;
+    margin:0 auto;
+    display: block;
+    text-align: center;  
+    object-fit:cover;
+    object-position: top center;
+  }
+
   .feature-text {
     max-width: 560px;
+    width: 100%;
   }
   
   #feature-image1 {
@@ -316,43 +356,44 @@ footer {
 
   .feature-text {
     order:2;
-  }
-
-  
-  #cover-image {
-    width: 100%;
-    height: auto;
-    margin-top:5.5rem;
   }
 
 }
 
-@media (max-width:798px) {
+
+
+@media only screen and (min-width:561px) and (max-width:942px) {
+
+  .card {
+    width: 40%;
+    position: relative;
+  }
+
+  .mug {
+    max-width: 96%;
+    min-width: 228px;
+    min-height: 228px;
+    margin:0 auto;
+    display: block;
+    text-align: center;  
+    object-fit:cover;
+    object-position: top center;
+  }
 
   .feature-text {
-    max-width: 798px;
-    width: 100%;
+   
+    width: 46vw;
   }
   
   #feature-image1 {
-    max-width: 798px;
-    width: 100%;
+
+    width: 46vw;
   }
   
   #feature-image2 {
-    max-width: 798px;
-    width: 100%;
+
+    width: 46vw;
   }
-
-  .feature-image {
-    order:1;
-  }
-
-  .feature-text {
-    order:2;
-  }
-
-
 
 }
 
