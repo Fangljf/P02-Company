@@ -9,6 +9,7 @@
   font-family: PlayfairDisplay-Medium;
   src: url(fonts/PlayfairDisplay-Medium.ttf);
 }
+
 @font-face {
   font-family: PlayfairDisplay-SemiBold;
   src: url(fonts/PlayfairDisplay-SemiBold.ttf);
@@ -41,6 +42,7 @@ src: url(fonts/Raleway-Light.ttf);
 
 body {
   font-family: Raleway-Regular;
+  padding: 2rem;
   background-color: #f9f7f5;
 }
 
@@ -53,7 +55,6 @@ h3{
 }
 
 /* font(end)*/
-
 
 /* Navigation(start) */
 header {
@@ -155,9 +156,6 @@ nav ul li ul li:first-child>a:before{
   left: 37px;
   transform: rotate(180deg);
 }
-
-
-
 /* Navigation(end) */
 
 
@@ -175,50 +173,43 @@ nav ul li ul li:first-child>a:before{
   margin-top: 7em;
 }
 
-.description {
+
+.category {
+  width:90%;
+  max-width: 900px;
   margin: 2em auto;
+}
+
+.mug {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+.description {
+  margin: auto;
   /* display: block; */
-  /* padding-bottom: 1em; */
-  /* padding-top: .6em; */
+  padding-bottom: 1em;
+  padding-top: .6em;
   border-top-width: 0.1em;
   /* border-top-style: solid;
   border-top-color: #b86646; */
-}
-
-.container1 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-  justify-content:left;
-  width: 100%;
-}
-
-.container1 .card {
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px #efedec;
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  max-width: 250px;
-}
-
-.img {
-  max-width: 100%;
-  display: block;
 }
 
 p {
 line-height: 1.5rem;
 }
 
-h4 {
+h3 {
+  font-size: larger;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #b86646;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
 }
 
 .in-text-link {
@@ -233,109 +224,36 @@ h4 {
   color:#d79258
 }
 
+/* images */
 
-/* footer */
+.user_images {
+  display: flex;
+}
 
-footer {
+#user1 {
+  max-width: 100%;
+}
+
+#footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }
 
 /* responsive-pages */
 
-@media screen and (min-width:398px) and (max-width:798px) {
+@media (max-width:520px) {
   .container-nav {
     text-align: center;
     flex-direction: column;
-    margin-top: 1.75em;
-    margin-bottom: 1.75em;
   }
 
-  .container-content .card {
+  .container-content {
     text-align: center;
     flex-direction: column;
   }
-
-  .container1 {
-    justify-content: center;
-  }
-
-/* hamburger menu in */
-
-
-.navigation-normal{
-  display: none;
+  
 }
 
 
-.hamburger {
-  padding: 15px 15px;
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible; }
-  .hamburger:hover {
-    opacity: 0.7; }
-  .hamburger.is-active:hover {
-    opacity: 0.7; }
-  .hamburger.is-active .hamburger-inner,
-  .hamburger.is-active .hamburger-inner::before,
-  .hamburger.is-active .hamburger-inner::after {
-    background-color: #7C6354; }
-
-.hamburger-box {
-  width: 35px;
-  height: 15px;
-  display: inline-block;
-  position: relative; }
-
-.hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px; }
-  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 35px;
-    height: 3px;
-    background-color: #7C6354;
-    border-radius: 3px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease; }
-  .hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block; }
-  .hamburger-inner::before {
-    top: -10px; }
-  .hamburger-inner::after {
-    bottom: -10px; }
-
-  .hamburger--3dy .hamburger-box {
-    perspective: 80px; 
-  }
-  
-  .hamburger--3dy .hamburger-inner {
-    transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-    .hamburger--3dy .hamburger-inner::before, .hamburger--3dy .hamburger-inner::after {
-      transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-  
-  .hamburger--3dy.is-active .hamburger-inner {
-    background-color: transparent !important;
-    transform: rotateX(-180deg); }
-    .hamburger--3dy.is-active .hamburger-inner::before {
-      transform: translate3d(0, 10px, 0) rotate(45deg); }
-    .hamburger--3dy.is-active .hamburger-inner::after {
-      transform: translate3d(0, -10px, 0) rotate(-45deg); }
-
-    /* https://www.youtube.com/watch?v=LciQi9PMnFY */
-}
 
 
