@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
     <title>Product detail page</title>
-    <link href="css/product-details.css" rel="stylesheet">
+    <link href="css/product-details-1.css" rel="stylesheet">
   </head>
 
   <body>
@@ -35,11 +35,11 @@
 
       <div class="image-container">
         <div id="main-image">
-          <img id="product-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
+          <img id="product-main-image" src="images/product-detail/mug6.png" alt="Large Vase | Anthracite">
         </div>
         <div id="thumbnails">
-          <img id="thumbnails-main-image" src="images/product-detail-page/mug6.png" alt="Large Vase | Anthracite">
-          <img id="thumbnails-second-image" src="images/product-detail-page/mug6-2.png" alt="Large Vase | Anthracite">
+          <img id="thumbnails-main-image" src="images/product-detail/mug6.png" alt="Large Vase | Anthracite">
+          <img id="thumbnails-second-image" src="images/product-detail/mug6-2.png" alt="Large Vase | Anthracite">
         </div>
       </div>
 
@@ -52,11 +52,11 @@
         </P>
 
         <div class="property-description">
-          <img class="safe-icon" src="images/product-detail-page/dishwasher-safe.png" alt="dishwasher safe">
+          <img class="safe-icon" src="images/product-detail/dishwasher-safe.png" alt="dishwasher safe">
           <div>Dishwasher safe</div>
         </div>
         <div class="property-description">
-          <img class="safe-icon" src="images/product-detail-page/microwave-safe.png" alt="microwave safe">
+          <img class="safe-icon" src="images/product-detail/microwave-safe.png" alt="microwave safe">
           <div>Microwave safe</div>
         </div>
 
@@ -87,9 +87,9 @@
           });
 
         </script>
+        <!--Knowledge about js - quantity selector is from https://www.youtube.com/watch?v=uliYkHK3pKg -->
 
-        <a href="cart.html">
-        <button id="add-to-cart-big-button">Add to Cart</button></a>
+        <input type="button" id="add-to-cart-big-button" onclick="location.href='cart.html'" value="Add to Cart">
 
       </div>
 
@@ -100,42 +100,40 @@
       <h3>YOU MAY ALSO LIKE</h3>
       <div class="container1">
         <div class="card">
-          <a href="product-details.html">
-          <img class="mug" src="images/mug3.png" alt="Dinner Bowl | Anthracite"></a>
+          <a href="product-details-2.html">
+          <img class="mug" src="images/product-detail/mug3.png" alt="Dinner Bowl | Anthracite"></a>
           <h4>Dinner Bowl | Anthracite</h4>
           <p>$62</p>
-          <a href="cart.html">
-            <button class="add_to_cart">Add to Cart</button>
-          </a>
+            <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+
+
         </div>
 
         <div class="card">
-          <a href="product-details.html">
-          <img class="mug" src="images/mug4.png" alt="Bud Vase | Stone"></a>
+          <a href="product-details-2.html">
+          <img class="mug" src="images/product-detail/mug4.png" alt="Bud Vase | Stone"></a>
           <h4>Bud Vase | Stone</h4>
           <p>$50</p>
-          <a href="cart.html">
-            <button class="add_to_cart">Add to Cart</button>
-          </a>
+          <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+
         </div>
         
         <div class="card">
-          <a href="product-details.html">
-          <img class="mug" src="images/mug5.png" alt="Breakfast Bowl | Stone"></a>
+          <a href="product-details-2.html">
+          <img class="mug" src="images/product-detail/mug5.png" alt="Breakfast Bowl | Stone"></a>
           <h4>Breakfast Bowl | Stone</h4>
           <p>$37</p>
-          <a href="cart.html">
-            <button class="add_to_cart">Add to Cart</button>
-          </a>
+          <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+
         </div>
 
       </div>
 
     </section>
     
-    <div id="footer">
+    <footer>
       <p>© 2023 Fang Ceramics.</p>
-    </div>
+    </footer>
  
 
   </body>
