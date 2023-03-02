@@ -136,6 +136,7 @@ nav ul li ul li{
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
+  z-index: 130;
 }
 
 nav ul li ul li a:hover{
