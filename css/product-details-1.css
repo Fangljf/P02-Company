@@ -136,22 +136,36 @@ nav ul li ul li a:hover{
   font-weight: bold;
 }
 
-nav ul li:hover ul{
+nav ul li:hover ul, .triangle{
   display: block;
 }
-
-nav ul li ul li:first-child>a:before{
-  content: "";
+ 
+.triangle {
   display: block;
   width: 0;
+  height: 0;;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #B86646;
-  position: absolute;
-  top: -34px;
-  left: 37px;
+  position: relative;
+  top: -22px;
+  left: 50px;
+  z-index: 120;
   transform: rotate(180deg);
+  pointer-events: auto;
 }
+
+.triangle::after {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background: #f9f7f5;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
+
 .container-details {
   display: flex;
   flex-wrap: wrap;

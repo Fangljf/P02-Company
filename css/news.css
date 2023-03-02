@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
 
 body {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
 }
 
@@ -101,30 +101,57 @@ nav ul li ul li{
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
+  z-index: 120;
 }
 
 nav ul li ul li a:hover{
   font-weight: bold;
 }
 
-nav ul li:hover ul{
+nav ul li:hover ul, .triangle{
   display: block;
 }
-
-nav ul li ul li:first-child>a:before{
-  content: "";
+ 
+.triangle {
   display: block;
   width: 0;
+  height: 0;;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #B86646;
-  position: absolute;
-  top: -34px;
-  left: 37px;
+  position: relative;
+  top: -22px;
+  left: 50px;
+  z-index: 120;
   transform: rotate(180deg);
+  pointer-events: auto;
 }
 
+/* .triangle {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 6px solid;
+  border-color: #B86646 #f9f7f5 #B86646 #f9f7f5;
+  position: absolute;
+  top: 18px;
+  left: 50px;
+  z-index: 120;
+  transform: rotate(180deg);
+  pointer-events: auto;
+} */
+/* https://zhuanlan.zhihu.com/p/482361933 */
 
+.triangle::after {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background: #f9f7f5;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
 
 /* Navigation(end) */
 
