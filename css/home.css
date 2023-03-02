@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
   font-family: 'PlayfairDisplay-Regular';
   src: url(fonts/PlayfairDisplay-Regular.ttf);
 }
@@ -37,7 +37,7 @@ src: url(fonts/Raleway-Italic.ttf);
 font-family: 'Raleway-Light';
 src: url(fonts/Raleway-Light.ttf);
 }
-*/
+
 
 body {
   font-family: 'Raleway-Regular';
@@ -261,8 +261,6 @@ nav ul li ul li:first-child>a:before{
   margin:0 auto;
   display: block;
   text-align: center;  
-  object-fit:cover;
-  object-position: top center;
 }
 
 .mug:hover {
@@ -272,6 +270,7 @@ nav ul li ul li:first-child>a:before{
 .mug:focus {
   opacity:0.7;
 }
+
 
 
 h3 {
@@ -331,8 +330,6 @@ footer {
     margin:0 auto;
     display: block;
     text-align: center;  
-    object-fit:cover;
-    object-position: top center;
   }
 
   .feature-text {
