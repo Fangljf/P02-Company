@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
     <title>Product detail page</title>
     <link href="css/product-details-2.css" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -98,6 +100,94 @@
 
     </div>
 
+
+    <section class="reviews">
+      <h4>Customer reviews</h4>
+      <div class="overall-evaluation">
+        <div class="mean-stars">
+        <!--Knowledge about stars is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star"></div>
+        </div>
+        <p id="review-number">Based on 2 reviews</p>
+      </div>
+
+      <div class="review-list">
+
+        <div class="review-details">
+          <div class="user-details">
+            <div class="photo-name-star">
+              <img class="user-photo" src="images/product-detail-2/user2.png" alt="Photo of a customer"> 
+              <div class="star-and-name">
+                <div class="stars">
+                  <!--Knowledge about stars is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                </div>
+                <p class="user-name">Candelario Muller</p>
+              </div>
+            </div>
+            <p class="date">02/01/2023</p>
+          </div>
+          <div class="comment">
+            <p class="comment-text">Quality is very good. I will consider buying more items from here.</p>
+          </div>
+        </div>
+
+        <div class="review-details">
+          <div class="user-details">
+            <div class="photo-name-star">
+              <img class="user-photo" src="images/product-detail-2/user1.png" alt="Photo of a customer"> 
+              <div class="star-and-name">
+                <div class="stars">
+                  <!--Knowledge about stars is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star"></div>
+                    <div class="fa fa-star"></div>
+                </div>
+                <p class="user-name">Lisa Chu</p>
+              </div>
+            </div>
+            <p class="date">08/10/2022</p>
+          </div>
+          <div class="comment">
+            <p class="comment-text">I love the design of this bowl. But the delivery was a bit slow.</p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="write-review">
+        <h4>Your review</h4>
+        <div class="star-text-container">
+          <div id="star-widget">
+          <!--Knowledge of writing star rating system is from https://www.youtube.com/watch?v=rw3eZ6XodN8-->
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fa fa-star"></label>    
+          </div>  
+
+          <textarea name="review-comment" rows="5" placeholder="Write your review here..."></textarea>
+          <input type="button" id="post-review" value="Post review">
+        </div>
+      </div>
+
+    </section>
 
     <section class="recommendation">
       <h3>YOU MAY ALSO LIKE</h3>

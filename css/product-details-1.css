@@ -1,55 +1,27 @@
 /* font */
 
-@font-face {
-  font-family: PlayfairDisplay-Regular;
-  src: url(fonts/PlayfairDisplay-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 
-@font-face {
-  font-family: PlayfairDisplay-Medium;
-  src: url(fonts/PlayfairDisplay-Medium.ttf);
-}
-@font-face {
-  font-family: PlayfairDisplay-SemiBold;
-  src: url(fonts/PlayfairDisplay-SemiBold.ttf);
-}
 
-@font-face {
-font-family: PlayfairDisplay-Italic-VariableFont_wght;
-src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300&display=swap');
 
-@font-face {
-  font-family: PlayfairDisplay-VariableFont_wght;
-  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: Raleway-Regular;
-  src: url(fonts/Raleway-Regular.ttf);
-}
-  
-@font-face {
-font-family: Raleway-Italic;
-src: url(fonts/Raleway-Italic.ttf);
-}
-
-@font-face {
-font-family: Raleway-Light;
-src: url(fonts/Raleway-Light.ttf);
-}
 
 body {
-  font-family: Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
 }
 
 h1, h2{
-  font-family: PlayfairDisplay-Medium;
+  font-family: 'Playfair Display', serif;
 }
 
 h3{
-  font-family: PlayfairDisplay-Regular;
+  font-family: 'Playfair Display', serif;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
 
 /* font(end)*/
@@ -154,7 +126,6 @@ nav ul li ul li:first-child>a:before{
 }
 .container-details {
   display: flex;
-  flex-wrap: wrap;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -163,10 +134,11 @@ nav ul li ul li:first-child>a:before{
 
 .image-container {
   padding:1rem;
+  width: 60%;
 }
 
 #product-main-image {
-  max-width: 450px;
+  width: 100%;
 }
 
 #thumbnails-main-image {
@@ -180,7 +152,7 @@ nav ul li ul li:first-child>a:before{
 
 .product-details {
   padding: 1rem;
-  max-width: 386px;
+  width: 50%;
 }
 
 .product-title {
@@ -188,6 +160,7 @@ nav ul li ul li:first-child>a:before{
   font-weight: 600;
   margin-top: 0rem;
   margin-bottom: 1rem;
+ 
 }
 
 .price {
@@ -202,6 +175,7 @@ nav ul li ul li:first-child>a:before{
 #product-description {
   color:#635B50 ;
   margin-bottom: 2rem;
+
 }
 
 .property-description {
@@ -256,6 +230,8 @@ nav ul li ul li:first-child>a:before{
   background-color:#b86646;
   border:0px;
   border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
 }
 
 #add-to-cart-big-button:hover {
@@ -263,6 +239,188 @@ nav ul li ul li:first-child>a:before{
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
+
+
+/*reviews*/
+
+.reviews {
+  border: 1px solid #E3D0B5;
+  border-radius: 4px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 868px;
+}
+
+.reviews h4 {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.overall-evaluation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+#review-number {
+line-height: 0;
+}
+
+.mean-stars {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #b1aeaa;
+}
+
+.mean-stars .checked{
+  color: #ffbb00;
+}
+
+.review-list {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.review-details {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-top:1px solid #E3D0B5; 
+}
+
+.stars {
+  color: #b1aeaa;
+}
+
+.stars .checked{
+  color: #ffbb00;
+}
+
+
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-name-star {
+  display: flex;
+}
+
+.user-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size:14px;
+}
+
+.user-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  margin-right: 1rem;
+}
+
+.date {
+  margin-top: 0;
+}
+
+
+
+
+.comment-text {
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+
+.star-text-container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+#star-widget input {
+  display: none;
+}
+
+#star-widget label{
+  font-size: 32px;
+  color: #b1aeaa;
+  padding-right: 0.5rem;
+  transition: all 0.2s ease;
+
+}
+
+input:not(:checked) ~ label:hover{
+  color:#ffbb00 ;
+}
+
+input:not(:checked) ~ label:hover ~ label{
+  color:#ffbb00 ;
+}
+
+input:checked ~ label {
+  color: #ffbb00;
+}
+
+input#rate-5:checked ~ label {
+  color: #ffbb00;
+  text-shadow: 0 0 20px #ffbb00;
+}
+
+
+textarea {
+  margin-bottom: 1rem;
+  margin-top:1rem;
+  height: 60px;
+  width: 100%;
+  border-style: solid;
+  border-color: #c6c6c5;
+  border-width: 1px;
+  border-radius:4px;
+}
+
+textarea, placeholder {
+  font-size: 14px;
+  color: #c6c6c5;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#post-review{
+  height: 40px;
+  width:150px;
+  font-size: medium;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  background-color:#b86646;
+  border:0px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+#post-review:hover {
+  background-color:#d79258;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+textarea:hover {
+  border-color:#b86646;
+}
+
+textarea:focus {
+  outline:none;
+  border-color:#b86646;
+}
+
+
+/*reviews(end)*/
+
+
 
 
 .recommendation {
@@ -275,30 +433,55 @@ nav ul li ul li:first-child>a:before{
 .container1 {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
   flex-wrap: wrap;
   justify-content:center;
-  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 910px;
+
 }
 
-.container1 .card {
+
+.card:hover{
+  box-shadow: 0 4px 16px #efd5c9;
+  transform: translate(0px,-8px);
+}
+
+
+.card {
+  width: 28%;
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  max-width: 250px;
+  transition: .4s;
+  margin: 0.5rem;
+  text-align: center;
 }
-
 
 
 .mug {
-  max-width: 100%;
+  max-width: 250px;
+  min-width: 200px;
+  min-height: 200px;
+  position:relative;
+  margin:0 auto;
   display: block;
+  text-align: center;  
 }
+
+
+.mug:hover {
+  opacity:0.7; 
+}
+
+.mug:focus {
+  opacity:0.7;
+}
+
 
 p {
 line-height: 1.5rem;
@@ -312,37 +495,6 @@ h3 {
 }
 
 
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
-
-.mug {
-  max-width: 100%;
-  display: block;
-}
-
-.mug:hover {
-  opacity:0.7; 
-}
-
-.mug:focus {
-  opacity:0.7;
-}
-
-
-.in-text-link {
-  color:#b86646
-}
-
-.in-text-link:hover {
-  color:#d79258
-}
-
-.in-text-link:focus {
-  color:#d79258
-}
-
 
 .add_to_cart {
   height: 40px;
@@ -353,7 +505,9 @@ nav a:hover, nav a:focus {
   background-color: #ffffff;
   border:1px solid #b86646;
   border-radius: 4px;
-  font-family: raleway;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+
 }
 
 .add_to_cart:hover {
@@ -361,6 +515,7 @@ nav a:hover, nav a:focus {
   transition-property: background-color; 
   transition-duration: 0.5s;
   color:#ffffff;
+  cursor: pointer;
 }
 
 
@@ -369,28 +524,83 @@ footer {
   text-align: center;
 }
 
-@media (max-width:560px) {
+@media only screen and (min-width:300px) and (max-width:560px) {
+ 
   .container-nav {
     text-align: center;
     flex-direction: column;
   }
   
-  .container1 .card {
-    max-width: 540px;
+  .container-details{
+    flex-wrap: wrap;
   }
 
   #product-main-image {
     width: 100%;
   }
   
+  .image-container {
+    width: 100%;
+  }
+  
+
   .product-details {
     padding: 1rem;
     width: 100%;
   }
 
 
+  .card {
+    width: 100%;
+  }
+
+  .mug {
+    max-width: 96%;
+    min-width: 228px;
+    min-height: 228px;
+    margin:0 auto;
+    display: block;
+    text-align: center;  
+  }
 }
 
+@media only screen and (min-width:561px) and (max-width:942px) {
+
+  .card {
+    width: 40%;
+    position: relative;
+  }
+
+
+  .mug {
+    max-width: 96%;
+    min-width: 228px;
+    min-height: 228px;
+    margin:0 auto;
+    display: block;
+    text-align: center;  
+    object-fit:cover;
+    object-position: top center;
+  }
+
+
+  .product-title {
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  
+  #product-description {
+    margin-bottom: 1rem;
+  }
+
+
+
+}
 
 
 
