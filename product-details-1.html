@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
     <title>Product detail page</title>
     <link href="css/product-details-1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
@@ -47,8 +49,7 @@
         <p class="product-title">LARGE VASE | ANTHRACITE</p>
         <p class="price">CAD $64</p>
         <P id="product-description">
-          Here are some descriptions of this product. Here are some descriptions of this product. Here are some descriptions of this product. 
-          Here are some descriptions of this product. 
+          Handmade ceramic vase in a beautiful black clay body finished with a ribbed texture. The inside of this large vase is fully glazed and water tight. Can be used for fresh blooms or dried florals.  
         </P>
 
         <div class="property-description">
@@ -94,6 +95,94 @@
       </div>
 
     </div>
+
+    <section class="reviews">
+      <h4>Customer reviews</h4>
+      <div class="overall-evaluation">
+        <div class="mean-stars">
+        <!--Knowledge about stars is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star checked"></div>
+          <div class="fa fa-star"></div>
+        </div>
+        <p id="review-number">Based on 2 reviews</p>
+      </div>
+
+      <div class="review-list">
+
+        <div class="review-details">
+          <div class="user-details">
+            <div class="photo-name-star">
+              <img class="user-photo" src="images/product-detail/user2.png" alt="Photo of a customer"> 
+              <div class="star-and-name">
+                <div class="stars">
+                  <!--Knowledge about stars is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                </div>
+                <p class="user-name">Alli Sam</p>
+              </div>
+            </div>
+            <p class="date">02/01/2023</p>
+          </div>
+          <div class="comment">
+            <p class="comment-text">Amazing vase! I have recommendationed my friends to check out this place!</p>
+          </div>
+        </div>
+
+        <div class="review-details">
+          <div class="user-details">
+            <div class="photo-name-star">
+              <img class="user-photo" src="images/product-detail/user1.png" alt="Photo of a customer"> 
+              <div class="star-and-name">
+                <div class="stars">
+                  <!--Knowledge about stars is from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star checked"></div>
+                    <div class="fa fa-star"></div>
+                    <div class="fa fa-star"></div>
+                </div>
+                <p class="user-name">Ariel Smith</p>
+              </div>
+            </div>
+            <p class="date">08/10/2022</p>
+          </div>
+          <div class="comment">
+            <p class="comment-text">Everything is perfect. But just too expensive!</p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="write-review">
+        <h4>Your review</h4>
+        <div class="star-text-container">
+          <div id="star-widget">
+          <!--Knowledge of writing star rating system is from https://www.youtube.com/watch?v=rw3eZ6XodN8-->
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fa fa-star"></label>  
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fa fa-star"></label>    
+          </div>  
+
+          <textarea name="review-comment" rows="5" placeholder="Write your review here..."></textarea>
+          <input type="button" id="post-review" value="Post review">
+        </div>
+      </div>
+
+    </section>
 
 
     <section class="recommendation">
