@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=0.5"> 
     <title>News</title>
     <link href="css/news.css" rel="stylesheet">
+    
   </head>
 
   <body>
@@ -14,7 +15,7 @@
         <div class="logo">
           <a href="home.html"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
         </div>
-        <nav>
+        <nav class="navigation-normal">
           <ul>
             <li><a href="home.html">Home</a ></li>
             <li><a href="shop.html">Shop</a ></li>
@@ -28,6 +29,11 @@
             <li><a href="cart.html">Cart</a ></li>
           </ul>
         </nav>
+        <div class="hamburger hamburger--3dy is-active" type="button" style="position: absolute; right: 1.5em; top:1.25em">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </span>
+        </div>
       </div>
     </header>
 
@@ -43,21 +49,21 @@
           <div class="container1">
 
             <div class="card">
-              <img class="img" src="/Images/news/Jane-Snider(679).png" alt="Behind The Wheel-Jane Snider Pottery">
+              <img class="img" src="images/news/jane-snider-679.png" alt="Behind The Wheel-Jane Snider Pottery">
               <h4>Behind The Wheel - Jane Snider Pottery</h4>
               <p>This weekend, we had a conversation with Jane Snider. Based in Ottawa, Ontario, Jane is one of The Northern Kiln's top selling artists. Read about her experience, history and inspiration.</p>
-              <a href="/news-detail-1.html" class="in-text-link">Read More</a>
+              <a href="news-detail-1.html" class="in-text-link">Read More</a>
             </div>
 
             <div class="card">
-              <img class="img" src="/Images/news/Pottery-workshop(679).png" alt="Workshop">
+              <img class="img" src="images/news/pottery-workshop-679.png" alt="Workshop">
               <h4>Pottery Work Shop with Fang Ceramics</h4>
              <p>Are you curious about making your very own piece of functional pottery, or wanting to spend quality time with friends while learning some new skills? Join our workshop on February 26th, 2023.</p>
               <a href="#" class="in-text-link">Read More</a>
             </div>
 
             <div class="card">
-              <img class="img" src="/Images/news/Table-movement(679).png" alt="Why Restaurants are Ditching White China for Hand-Made Ceramics?">
+              <img class="img" src="images/news/table-movement-679.png" alt="Why Restaurants are Ditching White China for Hand-Made Ceramics?">
               <h4>Why Restaurants are Ditching White China for Hand-Made Ceramics?</h4>
               <p>From the potters who are breaking all the rules to the restaurants that worship them, here’s everything you need to know to get in on the wheel to table movement.</p>
               <a href="#" class="in-text-link">Read More</a>
@@ -77,9 +83,33 @@
 
     </div>
       
-    <div id="footer">
+    <footer>
       <p>© 2023 Fang Ceramics.</p>
-    </div>
- 
+    </footer>
+
+    <script>
+      /**
+       * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+       *
+       * @private
+       * @author Todd Motto
+       * @link https://github.com/toddmotto/foreach
+       * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+       * @callback requestCallback      callback   - Callback function for each iteration.
+       * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+       * @returns {}
+       */
+        var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+          forEach(hamburgers, function(hamburger) {
+            hamburger.addEventListener("click", function() {
+              this.classList.toggle("is-active");
+            }, false);
+          });
+        }
+      </script>
+
   </body>
 </html>

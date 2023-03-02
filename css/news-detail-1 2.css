@@ -136,15 +136,15 @@ nav ul li ul li{
   box-shadow: 0 4px 16px #efedec;
 }
 
+nav ul li ul li a:hover{
+  font-weight: bold;
+}
+
 nav ul li:hover ul{
   display: block;
 }
 
-
-
-
-
-.triangle {
+nav ul li ul li:first-child>a:before{
   content: "";
   display: block;
   width: 0;
@@ -152,9 +152,8 @@ nav ul li:hover ul{
   border-right: 6px solid transparent;
   border-bottom: 6px solid #B86646;
   position: absolute;
-  top: 18px;
-  left: 50px;
-  z-index: 120;
+  top: -34px;
+  left: 37px;
   transform: rotate(180deg);
 }
 /* Navigation(end) */
@@ -189,7 +188,7 @@ nav ul li:hover ul{
 
 
 .description {
-  margin: 2em auto;
+  margin: auto;
   /* display: block; */
   padding-bottom: 1em;
   padding-top: .6em;
@@ -205,7 +204,7 @@ line-height: 1.5rem;
 h3 {
   font-size: larger;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #b86646;
 }
 
@@ -229,19 +228,13 @@ nav a:hover, nav a:focus {
 
 .user_images {
   display: flex;
-  margin-top: 1em;
-  margin-bottom: 3em;
 }
 
 #user1 {
-  max-width: 50%;
+  max-width: 100%;
 }
 
-#user2 {
-  max-width: 50%;
-}
-
-footer {
+#footer {
   border-top: 1px solid #E3D0B5;
   text-align: center;
 }
