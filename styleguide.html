@@ -12,9 +12,7 @@
 
     <header>
       <h1>Style Guide of Fang Ceramics</h1>
-      <p>Ceramic Products for Home & Soul</p>
-    </header>
-
+      <!-- <p>Ceramic Products for Home & Soul</p> -->
     <nav class="sticky">        
       <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
       <a href="#text_elements" class="button-nav">Text</a>
@@ -24,7 +22,9 @@
       <a href="cart.html" class="button-nav">Cart</a>
       <a href="#citations" class="button-nav">Citations</a>
     </nav>
+  </header>
 
+  <section class="container-content">  
     <!-- INTERACTIVE ELEMENTS SECTION // -->
 
     <section id="interactive_elements">
@@ -125,16 +125,29 @@
         <p>input[type="radio"]</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;input type="radio" id="payment-method1" name="payment-method" value="1"&gt;</code>
-        <code>&lt;label for="payment-method1"&gt;Credit card&lt;/label&gt;</code>
-        <code>&lt;input type="radio" id="payment-method2" name="payment-method" value="2"&gt;</code>
-        <code>&lt;label for="payment-method2"&gt;PayPal&lt;/label&gt;</code>
+        <code>&lt;input type="radio" class="radio-type" name="payment-method" id="creadit-card" value="1"&gt;</code>
+        <code>&lt;label for="credit-card"&gt;Credit card&lt;/label&gt;</code>
+        <code>&lt;input type="radio" class="radio-type" id="PayPal" name="payment-method" value="2"&gt;</code>
+        <code>&lt;label for="PayPal"&gt;PayPal&lt;/label&gt;</code>
+        <code>&lt;input type="radio" class="radio-type-disabled" id="wechat" name="payment-method" value="3"&gt;</code>
+        <code>&lt;label for="Wechat"&gt;Wechat&lt;/label&gt;</code>
+
 
         <h4>Rendered element:</h4>
-        <input type="radio" id="payment-method1" name="payment-method" value="1">
-        <label for="payment-method1">Credit card</label>
-        <input type="radio" id="payment-method2" name="payment-method" value="2">
-        <label for="payment-method2">PayPal</label>
+        <div class="payment-radio">
+          <input class="radio-type" type="radio" id="credit-card" name="payment-method" value="1">
+          <label for="credit-card">Credit card</label>
+        </div>
+
+        <div class="payment-radio">
+          <input class="radio-type" type="radio" id="PayPal" name="payment-method"  value="2">  
+          <label for="PayPal"> PayPal</label>
+        </div>
+
+        <div class="payment-radio">
+          <input class="radio-type-disabled" type="radio" id="wechat" name="payment-method" disabled>
+          <label for="wechat">Wechat</label>
+        </div>
 
       </section>
 
@@ -702,10 +715,17 @@
         <li>mdn web docs. (2022). <strong>::placeholder [Online Tutorial]</strong>. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder">here</a>.</li>
         <li>Warren Davies. (2021). <strong>Sticky navbar [Online Tutorial]</strong>. Retrieved from <a href="      https://alvarotrigo.com/blog/sticky-navbar/#:~:text=To%20create%20a%20sticky%20navbar%2C%20you%20use%20the%20position%3A%20fixed,stick%20to%20its%20parent%20element.">here</a>.</li>
         <li>TAV CERAMICS. (2023). <strong>TAV CERAMICS SHOP [Images of products]</strong>. Retrieved from <a href="https://tavceramics.com/collections/all">here</a>.</li>
+        <li>yimi Shan. (2018). <strong>Use CSS to modify the radio style [Tutorial]</strong>. Retrieved from <a href="https://www.jianshu.com/p/e1dac58adb2c">here</a>.</li>
+        <li>Toddmotto. (2014). <strong>foreach.js [Javascript]</strong>. Retrieved from <a href="https://github.com/toddmotto/foreach">here</a>.</li>
+        <li>The Northern Kiln. (2022). <strong>Behind The Wheel - Jane Snider Pottery [Article]</strong>. Retrieved from <a href="https://thenorthernkiln.ca/blogs/behind-the-wheel/behind-the-wheel-jane-snider-pottery">here</a>.</li>
+        <li>Kiln 9 Ceramics. (Unknown). <strong>POTTERY WORKSHOPS with Kiln 9 Ceramics [Article]</strong>. Retrieved from <a href="https://www.kiln9ceramics.com/collections/workshops">here</a>.</li>
+        <li>BELLE CUSHING. (2014). <strong>Why Restaurants are Ditching White China for Hand-Made Ceramics [Article]</strong>. Retrieved from <a href="https://www.bonappetit.com/entertaining-style/trends-news/article/new-ceramics">here</a>.</li>
+        <li>Xiao Y start again. (2022). <strong>Make a flexible two-level menu (HTML, CSS, JavaScript) [Tutorial]</strong>. Retrieved from <a href="https://blog.csdn.net/weixin_43230812/article/details/123371827">here</a>.</li>
+        <li>Arya_1s. (2016). <strong>Pure CSS to achieve multi-level navigation bar [Tutorial]</strong>. Retrieved from <a href="https://blog.csdn.net/qq_20417227/article/details/52266686">here</a>.</li>
       </ul>
     </section>
 
-    
+  </section>
 
   </body>
 </html>
