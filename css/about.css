@@ -1,58 +1,29 @@
 /* font */
 
-@font-face {
-  font-family: PlayfairDisplay-Regular;
-  src: url(fonts/PlayfairDisplay-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 
-@font-face {
-  font-family: PlayfairDisplay-Medium;
-  src: url(fonts/PlayfairDisplay-Medium.ttf);
-}
 
-@font-face {
-  font-family: PlayfairDisplay-SemiBold;
-  src: url(fonts/PlayfairDisplay-SemiBold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300&display=swap');
 
-@font-face {
-font-family: PlayfairDisplay-Italic-VariableFont_wght;
-src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: PlayfairDisplay-VariableFont_wght;
-  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: Raleway-Regular;
-  src: url(fonts/Raleway-Regular.ttf);
-}
-  
-@font-face {
-font-family: Raleway-Italic;
-src: url(fonts/Raleway-Italic.ttf);
-}
-
-@font-face {
-font-family: Raleway-Light;
-src: url(fonts/Raleway-Light.ttf);
-}
 
 body {
-  font-family: Raleway-Regular;
-  padding: 2rem;
+  font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
 }
 
 h1, h2{
-  font-family: PlayfairDisplay-Medium;
+  font-family: 'Playfair Display', serif;
 }
 
 h3{
-  font-family: PlayfairDisplay-Regular;
+  font-family: 'Playfair Display', serif;
 }
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
 
 /* font(end)*/
 
