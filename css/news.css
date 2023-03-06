@@ -331,6 +331,41 @@ footer {
       transform: translate3d(0, -10px, 0) rotate(-45deg); }
 
     /* https://www.youtube.com/watch?v=LciQi9PMnFY */
+
+  #hamburger-active
+  {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    z-index: 4;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #hamburger-active li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /*
+    * And let's slide it in from the left
+    */
+  #hamburger-active:checked ~ ul
+  {
+    transform: none;
+  }
+
 }
+
 
 
