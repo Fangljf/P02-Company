@@ -54,12 +54,11 @@ header {
 }
 
 .logo {
-  padding-left: 3em;
+  padding-left: 0em;
 }
 
 nav{
   display: table;
-  padding-right: 2em;
 }
 
 nav a {
@@ -84,6 +83,8 @@ nav ul {
 nav li {
   margin-left:1em;
   margin-right:1em;
+  position: relative;
+  float: left;
 }
 
 nav ul li{
@@ -156,7 +157,6 @@ nav ul li:hover ul, .triangle{
 
 .title {
   text-align: center;
-  margin-bottom: 4em;
   margin-top: 7em;
 }
 
@@ -238,17 +238,16 @@ footer {
 
 /* responsive-pages */
 
-@media (max-width:550px) {
-  .container-nav {
-    text-align: left;
-    flex-direction: column;
+@media (min-width:630px) and (max-width:925px) {
+
+  .logo {
+    padding-left: 2em;
   }
 
-  .container-content {
-    text-align: left;
-    flex-direction: column;
+  nav{
+    display: table;
+    padding-right: 2em;
   }
-  
 }
 
 /* hamburger menu */
@@ -273,7 +272,7 @@ footer {
   .logo{
     z-index: 100;
     position: fixed;
-    left: -1em;
+    left: 2em;
   }
 
   #checkbox-hamburger {
@@ -299,6 +298,7 @@ footer {
     height: 35px;
     position: absolute;
     top: -7px;
+    right: -10px;
     cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 100; /* and place it over the hamburger */
@@ -316,7 +316,7 @@ footer {
     margin-bottom: 3.5px;
     position: relative;
     top: 4px;
-    right: -15px;
+    right: 4px;
     background: #B86646;
     border-radius: 2px;
     z-index: 100;
