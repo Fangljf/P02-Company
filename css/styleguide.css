@@ -303,6 +303,7 @@ input[type="reset"]:hover {
 
 /* quantity selector (end) */
 
+/*
 .secondary-selector-checked {
   display: inline-block;
   padding-top: 0.8rem;
@@ -344,7 +345,7 @@ input[type="reset"]:hover {
 .second_nav_section a {
   margin-right: 0.6rem;
 }
-
+*/
 
 .button_section {
   max-width: 900px;
