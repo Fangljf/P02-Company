@@ -1,56 +1,29 @@
 /* font */
 
-@font-face {
-  font-family: PlayfairDisplay-Regular;
-  src: url(fonts/PlayfairDisplay-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 
-@font-face {
-  font-family: PlayfairDisplay-Medium;
-  src: url(fonts/PlayfairDisplay-Medium.ttf);
-}
-@font-face {
-  font-family: PlayfairDisplay-SemiBold;
-  src: url(fonts/PlayfairDisplay-SemiBold.ttf);
-}
 
-@font-face {
-font-family: PlayfairDisplay-Italic-VariableFont_wght;
-src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300&display=swap');
 
-@font-face {
-  font-family: PlayfairDisplay-VariableFont_wght;
-  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: Raleway-Regular;
-  src: url(fonts/Raleway-Regular.ttf);
-}
-  
-@font-face {
-font-family: Raleway-Italic;
-src: url(fonts/Raleway-Italic.ttf);
-}
-
-@font-face {
-font-family: Raleway-Light;
-src: url(fonts/Raleway-Light.ttf);
-}
 
 body {
-  font-family: Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
 }
 
 h1, h2{
-  font-family: PlayfairDisplay-Medium;
+  font-family: 'Playfair Display', serif;
 }
 
 h3{
-  font-family: PlayfairDisplay-Regular;
+  font-family: 'Playfair Display', serif;
 }
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
 /* font(end)*/
 
 
@@ -250,26 +223,26 @@ input:focus {
 
 
 input::placeholder {
-  font-family:Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   color: #c6c6c5;
   padding-left: 0.4rem;
 }
 
 input[type=text] {
-  font-family:Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   max-width: 100%;  
 }
 
 input[type=number] {
-  font-family:Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   max-width: 100%;  
 }
 
 input[type=month] {
-  font-family:Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   max-width: 100%;  
 }
@@ -311,7 +284,7 @@ width: 16px;
   width: 160px;
   font-size: large;
   font-weight: 600;
-  font-family:Raleway;
+  font-family: 'Raleway', sans-serif;
   color: #ffffff;
   background-color:#b86646;
   border:0px;
@@ -383,7 +356,7 @@ width: 16px;
 }
 
 .right-column input[type=number] {
-  font-family:Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   max-width: 66%;  
 }
@@ -402,12 +375,11 @@ width: 16px;
   width:30%;
   font-size: medium;
   font-weight: 500;
-  font-family:Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   color: #ffffff;
   background-color:#b86646;
   border:0px;
   border-radius: 4px;
-  font-family: raleway;
 }
 
 #apply:hover {

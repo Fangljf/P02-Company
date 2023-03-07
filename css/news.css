@@ -1,56 +1,30 @@
 /* font */
 
-@font-face {
-  font-family: PlayfairDisplay-Regular;
-  src: url(fonts/PlayfairDisplay-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-@font-face {
-  font-family: PlayfairDisplay-Medium;
-  src: url(fonts/PlayfairDisplay-Medium.ttf);
-}
-@font-face {
-  font-family: PlayfairDisplay-SemiBold;
-  src: url(fonts/PlayfairDisplay-SemiBold.ttf);
-}
 
-@font-face {
-font-family: PlayfairDisplay-Italic-VariableFont_wght;
-src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: PlayfairDisplay-VariableFont_wght;
-  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: Raleway-Regular;
-  src: url(fonts/Raleway-Regular.ttf);
-}
-  
-@font-face {
-font-family: Raleway-Italic;
-src: url(fonts/Raleway-Italic.ttf);
-}
-
-@font-face {
-font-family: Raleway-Light;
-src: url(fonts/Raleway-Light.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
 
 body {
-  font-family: Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
 }
 
 h1, h2{
-  font-family: PlayfairDisplay-Medium;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
 }
 
 h3{
-  font-family: PlayfairDisplay-Regular;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
 
 /* font(end)*/
 
@@ -133,30 +107,57 @@ nav ul li ul li{
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
+  z-index: 120;
 }
 
 nav ul li ul li a:hover{
   font-weight: bold;
 }
 
-nav ul li:hover ul{
+nav ul li:hover ul, .triangle{
   display: block;
 }
-
-nav ul li ul li:first-child>a:before{
-  content: "";
+ 
+.triangle {
   display: block;
   width: 0;
+  height: 0;;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid #B86646;
-  position: absolute;
-  top: -34px;
-  left: 37px;
+  position: relative;
+  top: -22px;
+  left: 50px;
+  z-index: 120;
   transform: rotate(180deg);
+  pointer-events: auto;
 }
 
+/* .triangle {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 6px solid;
+  border-color: #B86646 #f9f7f5 #B86646 #f9f7f5;
+  position: absolute;
+  top: 18px;
+  left: 50px;
+  z-index: 120;
+  transform: rotate(180deg);
+  pointer-events: auto;
+} */
+/* https://zhuanlan.zhihu.com/p/482361933 */
 
+.triangle::after {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background: #f9f7f5;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
 
 /* Navigation(end) */
 
@@ -336,6 +337,41 @@ footer {
       transform: translate3d(0, -10px, 0) rotate(-45deg); }
 
     /* https://www.youtube.com/watch?v=LciQi9PMnFY */
+
+  #hamburger-active
+  {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    z-index: 4;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #hamburger-active li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /*
+    * And let's slide it in from the left
+    */
+  #hamburger-active:checked ~ ul
+  {
+    transform: none;
+  }
+
 }
+
 
 
