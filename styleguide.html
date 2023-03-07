@@ -12,19 +12,19 @@
 
     <header>
       <h1>Style Guide of Fang Ceramics</h1>
-      <!-- <p>Ceramic Products for Home & Soul</p> -->
+      <p>Ceramic Products for Home & Soul</p> 
+    </header>
+
     <nav class="sticky">        
       <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
       <a href="#text_elements" class="button-nav">Text</a>
       <a href="#combined_elements" class="button-nav">Components</a>
       <a href="#branding_ideas" class="button-nav">Branding</a>
-      <a href="shop.html" class="button-nav">Shop</a>
-      <a href="cart.html" class="button-nav">Cart</a>
+      <a href="home.html" class="button-nav">Website</a>
       <a href="#citations" class="button-nav">Citations</a>
     </nav>
-  </header>
 
-  <section class="container-content">  
+  <section class="container_content">  
     <!-- INTERACTIVE ELEMENTS SECTION // -->
 
     <section id="interactive_elements">
@@ -51,52 +51,97 @@
         <h3>Navigation Link</h3>
 
 
-        <h4>Style1: CSS selector:</h4>
+        <h4>CSS selector:</h4>
         <p>.button-nav1</p>
 
-        <h4>Style1: Sample code:</h4>
+        <h4>Sample code:</h4>
         <code>&lt;a href="#" class="button-nav1"&gt;Home&lt;/a&gt;</code>
 
-        <h4>Style1: Rendered element:</h4>
+        <h4>Rendered element:</h4>
         <div>
           <a href="#" class="button-nav1">Home</a>
         </div>
 
 
-        <h4>Style2: CSS selector:</h4>
-        <p>.button-nav</p>
-
-        <h4>Style2: Sample code:</h4>
-        <code>&lt;a href="#" class="button-nav2"&gt;Mugs&lt;/a&gt;</code>
-
-        <h4>Style2: Rendered element:</h4>
-        <a href="#" class="button-nav2">Mugs</a>
-
-
-
       </section>
 
 
-      <section class="submit_reset_section">
-        <h3>Submit/Reset Buttons</h3>
+      <section class="button_section">
+        <h3>Buttons</h3>
 
-        <h4>CSS selectors:</h4>
-        <p>input[type="submit"]</p>
-        <p>input[type="reset"]</p>
-        <p>#submit-button</p>
-        <p>#reset-button</p>
+        <div class="button_container_1">
+          <div>
+            <p>By style</p>
+            <h4>Filled buttons:</h4>
+            <input type="submit" value="Submit" id="submit-button">
+
+            <h4>Ghost buttons:</h4>
+            <input type="reset" value="Reset" id="reset-button">
+          </div>
+  
+          <div>
+            <p>By size</p>
+            <h4>Large buttons:</h4>
+            <input type="button" id="buy-now" onclick="location.href='result.html'" value="Buy now">
+
+            <h4>small buttons:</h4>
+            <input type="button" id="apply" value="Apply">        
+          </div>
+
+          <div>
+            <p>Buttons with icons</p>
+            <h4>Return button:</h4>
+            <div id="return_button">
+             <a href="cart.html" class="in-text-link"><img class="back-icon" src="images/checkout/back.png" alt="Back">Return to cart</a>
+            </div>
+          </div>
+
+        </div>
+ 
+      </section>
+
+
+      <section class="quantity_selector_section">
+        <h3>Quantity Selectors</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.quantity_selector</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;form&gt;</code>
-        <code>&lt;input type="submit" value="Submit" id="submit-button"&gt;</code>
-        <code>&lt;input type="reset" value="Reset" id="reset-button"&gt;</code>
-        <code>&lt;/form&gt;</code>
+        <code>&lt;div class="quantity_selector"&gt;</code>
+        <code>&lt;span class="minus"&gt;-&lt;/span&gt;</code>
+        <code>&lt;span class="num"&gt;1&lt;/span&gt;</code>
+        <code>&lt;span class="plus"&gt;+&lt;/span&gt;</code>
 
+      
         <h4>Rendered element:</h4>
-          <form>
-            <input type="submit" value="Submit" id="submit-button">
-            <input type="reset" value="Reset" id="reset-button">
-          </form>
+        <div class="quantity_selector">
+          <span class="minus">-</span>
+          <span class="num">1</span>
+          <span class="plus">+</span>
+        </div>
+
+        <script>
+          const plus = document.querySelector(".plus"),
+          minus = document.querySelector(".minus"),
+          num = document.querySelector(".num");
+          
+          let a = 1; 
+
+          plus.addEventListener("click",()=>{
+            a++;
+            console.log(a);
+            num.innerText = a;
+          });
+
+          minus.addEventListener("click",()=>{
+            if(a>1){
+              a--;
+              num.innerText = a;
+            }
+          });
+
+        </script>
 
       </section>
 
@@ -149,6 +194,19 @@
           <label for="wechat">Wechat</label>
         </div>
 
+        
+        <h4>Rendered element (radio button with icons):</h4>
+        <div class="delivery-method">
+          <div class="delivery-method-box">
+            <input class="radio-type" type="radio" id="delivery-method1" name="delivery-method" value="1">
+            <label for="delivery-method1"><img class="icon-delivery" src="images/checkout/ship.png" alt="Ship">Ship</label>
+          </div>
+          <div class="delivery-method-box">
+            <input class="radio-type" type="radio" id="delivery-method2" name="delivery-method" value="2">
+            <label for="delivery-method2"><img class="icon-delivery" src="images/checkout/pickup.png" alt="Pickup">Pick up</label>
+          </div>
+        </div>
+
       </section>
 
 
@@ -195,7 +253,7 @@
 
           <h4>Rendered element:</h4>
           <h1>Page Title - Use as the title for the whole web-page</h1>
-          <h2>Card Title - Use as the title of a card</h2>
+          <h2 id="h2_headings">Card Title - Use as the title of a card</h2>
           <h3>Section Title - Use to seperate sections</h3>
           <h4>The Forth Level of Heading</h4>
 
@@ -273,7 +331,7 @@
 
       </section>
 
-
+      <!-- 
       <section class="second_nav_section">
         <h3>Secondary Navigation</h3>
 
@@ -290,6 +348,7 @@
           <a href="#" class="secondary-selector-unchecked">Unchecked</a>
         </div>
       </section>
+      --> 
 
 
       <section class="product_list_section">
@@ -332,30 +391,34 @@
 
         <h4>Rendered elements:</h4>
         <div class="container1">
-
-          <div class="card1">
-            <img class="mug" src="images/styleguide/mug1.png" alt="Everyday Mug | Stone">
-            <h4>Everyday Mug | Stone</h4>
-            <p><a href="css/mug1.html" class="in-text-link">View Details</a></p>
+          <div class="card">
+            <a href="product-details-1.html">
+            <img class="mug" src="images/product-detail/mug3.png" alt="Dinner Bowl | Anthracite"></a>
+            <h4>Dinner Bowl | Anthracite</h4>
+            <p>$62</p>
+              <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+  
+  
+          </div>
+  
+          <div class="card">
+            <a href="product-details-2.html">
+            <img class="mug" src="images/product-detail/mug4.png" alt="Bud Vase | Stone"></a>
+            <h4>Bud Vase | Stone</h4>
             <p>$50</p>
-            <p><button class="add_to_cart">Add to Cart</button></p>
+            <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+  
           </div>
           
-          <div class="card2">
-              <img class="mug" src="images/styleguide/mug2.png" alt="Everyday Mug | Anthracite">
-            <h4>Everyday Mug | Anthracite</h4>
-            <p><a href="css/mug2.html" class="in-text-link">View Details</a></p>
-            <p>$37</p>
-            <p><button class="add_to_cart">Add to Cart</button></p>
+          <div class="card">
+            <a href="product-details-1.html">
+            <img class="mug" src="images/product-detail/mug6.png" alt="Large Vase | Anthracite"></a>
+            <h4>Large Vase | Anthracite</h4>
+            <p>$64</p>
+            <input type="button" class="add_to_cart" onclick="location.href='cart.html'" value="Add to Cart">
+  
           </div>
-
-          <div class="card3">
-              <img class="mug" src="images/styleguide/mug3.png" alt="Dinner Bowl | Anthracite">
-          <h4>Dinner Bowl | Anthracite</h4>
-          <p><a href="css/mug3.html" class="in-text-link">View Details</a></p>
-          <p>$62</p>
-          <p><button class="add_to_cart">Add to Cart</button></p>
-          </div>
+  
         </div>
   
 
