@@ -64,6 +64,8 @@ header {
   top:0;
   background-color: #f9f7f5;
   text-align: center;
+  z-index: 400;
+  justify-content: center;
 }
 
 nav {
@@ -461,6 +463,260 @@ input[type="reset"]:hover {
   border-top-color: #b86646;
 }
 
+
+/* Navigation Bar with Drop-down Menu */
+
+.navigation-bar-with-drop-down-menu {
+  max-width: 900px;
+  padding-bottom: 2rem;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: #b86646;
+}
+
+.navigation-normal {
+  display: flex;
+}
+
+.navigation-normal a {
+  text-decoration: none;
+  color:#7C6354;
+}
+
+.navigation-normal a:hover,
+.navigation-normal a:focus {
+  padding-bottom: 6px;
+  font-weight: bold;
+  border-bottom: 2px solid #7c6354;
+}
+
+.navigation-normal ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navigation-normal ul li {
+  margin-left:1em;
+  margin-right:1em;
+  margin-bottom:-0.5em;
+  position: relative;
+  float: left;
+}
+
+.navigation-normal ul li{
+  line-height: 40px;
+}
+
+.navigation-normal ul li ul{
+  display: none;
+  position: absolute;
+  left: 0;
+  text-align: left;
+}
+
+.navigation-normal ul li ul li{
+  float: none;
+  margin: 0.8em;
+  width: 7em;
+  text-align: left;
+}
+
+.secondary-style{
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #efedec;
+  z-index: 130;
+}
+
+.navigation-normal ul li ul li a:hover{
+  font-weight: bold;
+}
+
+.navigation-normal ul li:hover ul, .triangle{
+  display: block;
+}
+ 
+.triangle {
+  display: block;
+  width: 0;
+  height: 0;;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #B86646;
+  position: relative;
+  top: -22px;
+  left: 50px;
+  z-index: 120;
+  transform: rotate(180deg);
+  pointer-events: auto;
+}
+
+.triangle::after {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background: #f9f7f5;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
+
+/* Mobile Hamburger Navigation */
+
+.mobile-hamburger-navigation {
+  max-width: 900px;
+  padding-bottom: 2rem;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: #b86646;
+}
+
+.navigation-hamburger {
+  display: block;
+  position: fixed;
+  top: -7px;
+  right: 75px;
+  }
+
+#checkbox-hamburger {
+  background-color: #232323;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+  
+/* checkbox */
+#menuToggle input 
+{
+  display: block;
+  width: 50px;
+  height: 35px;
+  position: absolute;
+  top: -12px;
+  left: 200px;
+  cursor: pointer;
+  opacity: 1; /* hide this */
+  z-index: 100; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+  
+/* hamburger */
+#menuToggle span
+{
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin-bottom: 3.5px;
+  position: relative;
+  top: 4px;
+  right: -215px;
+  background: #B86646;
+  border-radius: 2px;
+  z-index: 100;
+  transform-origin: 3.5px 4px; 
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+  
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 2.3px 1.6px; 
+}
+
+/* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #B86646;
+}
+  
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg);
+}
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+  
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+#menu
+{
+  display:grid;
+  /* row-gap: 2px solid #E3D0B5; */
+  grid-template-rows: 80px 80px 50px 50px 50px 80px 100px;
+  align-items: center;
+  font-weight: 600;
+  color:#7C6354;
+  position: absolute;
+  width: 360px;
+  height: 472px;
+  top: 60px;
+  left: 200px;
+  margin: -100px 0 0 -989px;
+  padding-top: 140px;
+  background: #FFFFFF;
+  z-index: 1;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+}
+
+/*
+  * And let's slide it in from the left
+  */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.navigation-hamburger ul li {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+
+
+
+
 /* product cards */
 
 .container1 {
@@ -565,11 +821,15 @@ input[type="reset"]:hover {
 #payment-form-title {
   font-size: larger;
   font-weight: bolder;
-  margin-bottom:2rem;
+  margin-bottom:1rem;
 }
 
 #radio {
   margin-bottom: 2rem;
+}
+
+#other-input {
+  padding-top: 1em;
 }
 
 /* Radio with Label[pseudo-element] */

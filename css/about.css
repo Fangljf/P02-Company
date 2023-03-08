@@ -408,9 +408,12 @@ footer {
     margin-right: 3em;
   }
 
-  /* .hamburger-li {
-    border:solid 3px #232323;
-  } */
+  #hamburger-style-1, #hamburger-style-2, #hamburger-style-3 {
+    border-top: solid 1px #E3D0B5;
+  }
+ 
+
 
 }
 
+/* learning resources: https://www.w3docs.com/snippets/css/what-does-the-css-tilde-selector-mean.html, https://codepen.io/erikterwan/pen/EVzeRP */
