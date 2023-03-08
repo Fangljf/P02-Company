@@ -159,6 +159,11 @@ nav ul li:hover ul, .triangle{
 }
 
 /* responsive-pages-normal */
+@media (max-width:900px) {
+  body {
+    padding: 1em;
+  }
+}
 
 @media (min-width:630px) and (max-width:925px) {
 
