@@ -9,21 +9,29 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
+  color: #3B3431;
 }
 
 h1, h2{
   font-family: 'Playfair Display', serif;
+  color: #3B3431;
 }
 
 h3{
   font-family: 'Playfair Display', serif;
+  color: #b86646;
+  font-size: larger;
 }
 
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  color: #3B3431;
 }
 
+p {
+  color:#3B3431 ;
+}
 
 /* font(end)*/
 
@@ -53,13 +61,9 @@ header {
   height: 26px;
 }
 
-.logo {
-  padding-left: 3em;
-}
 
 nav{
   display: table;
-  padding-right: 2em;
 }
 
 nav a {
@@ -84,6 +88,8 @@ nav ul {
 nav li {
   margin-left:1em;
   margin-right:1em;
+  position: relative;
+  float: left;
 }
 
 nav ul li{
@@ -156,8 +162,8 @@ nav ul li:hover ul, .triangle{
 
 .title {
   text-align: center;
-  margin-bottom: 4em;
-  margin-top: 7em;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
 }
 
 
