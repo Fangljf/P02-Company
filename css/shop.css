@@ -355,8 +355,6 @@ nav ul li:hover ul, .triangle{
 
 .mug {
   max-width: 250px;
-  min-width: 200px;
-  min-height: 200px;
   position:relative;
   margin:0 auto;
   display: block;
@@ -467,10 +465,7 @@ footer {
 
   .mug {
     max-width: 96%;
-    min-width: 228px;
-    min-height: 228px;
     margin:0 auto;
-    display: block;
     text-align: center;  
   }
 }
@@ -485,10 +480,7 @@ footer {
 
   .mug {
     max-width: 96%;
-    min-width: 228px;
-    min-height: 228px;
     margin:0 auto;
-    display: block;
     text-align: center;  
     object-fit:cover;
     object-position: top center;
