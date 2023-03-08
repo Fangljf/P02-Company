@@ -9,19 +9,24 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
+  color: #3B3431;
 }
 
 h1, h2{
   font-family: 'Playfair Display', serif;
+  color: #3B3431;
 }
 
 h3{
   font-family: 'Playfair Display', serif;
+  color: #b86646;
+  font-size: larger;
 }
 
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  color: #3B3431;
 }
 
 
@@ -29,9 +34,7 @@ p {
   color:#3B3431 ;
 }
 
-h1 {
-  color: #3B3431;
-}
+/* font (end) */
 
 header {
   position: fixed;
@@ -166,7 +169,7 @@ nav ul li:hover ul, .triangle{
 
 #title2 {
   flex:1;
-  text-align: right;
+  text-align: left;
 }
 
 #title3 {
@@ -225,7 +228,6 @@ nav ul li:hover ul, .triangle{
 
 .cart_item1_amount {
   flex:1;
-  text-align: right;
 }
 
 .cart_item2 {
@@ -263,7 +265,7 @@ nav ul li:hover ul, .triangle{
   max-width: 120px;
   display:flex;
   align-items:center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .quantity-selector span {
@@ -277,8 +279,16 @@ nav ul li:hover ul, .triangle{
   background-color: #E3D0B5;
 }
 
+.minus:hover {
+  background-color:#f4e8d8; 
+}
+
 .plus {
   background-color: #E3D0B5;
+}
+
+.plus:hover {
+  background-color:#f4e8d8; 
 }
 
 .num {
@@ -289,8 +299,16 @@ nav ul li:hover ul, .triangle{
   background-color: #E3D0B5;
 }
 
+.minus1:hover {
+  background-color:#f4e8d8; 
+}
+
 .plus1 {
   background-color: #E3D0B5;
+}
+
+.plus1:hover {
+  background-color:#f4e8d8; 
 }
 
 .num1 {

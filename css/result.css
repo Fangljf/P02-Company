@@ -9,21 +9,30 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
+  color: #3B3431;
 }
 
 h1, h2{
   font-family: 'Playfair Display', serif;
+  color: #3B3431;
 }
 
 h3{
   font-family: 'Playfair Display', serif;
+  color: #b86646;
+  font-size: larger;
 }
 
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  color: #3B3431;
 }
 
+
+p {
+  color:#3B3431 ;
+}
 
 /* font(end)*/
 
@@ -182,27 +191,60 @@ nav ul li:hover ul, .triangle{
 
 }
 
+
+
 .container {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
   flex-wrap: wrap;
   justify-content:center;
-  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 910px;
+
 }
 
-.container .card {
+
+.card:hover{
+  box-shadow: 0 4px 16px #efd5c9;
+  transform: translate(0px,-8px);
+}
+
+
+.card {
+  width: 28%;
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
-  margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  max-width: 250px;
+  transition: .4s;
+  margin: 0.5rem;
   text-align: center;
 }
+
+
+.mug {
+  max-width: 250px;
+  min-width: 200px;
+  min-height: 200px;
+  position:relative;
+  margin:0 auto;
+  display: block;
+  text-align: center;  
+}
+
+.mug:hover {
+  opacity:0.7; 
+}
+
+.mug:focus {
+  opacity:0.7;
+}
+
+
 
 
 .order-details {
@@ -267,16 +309,45 @@ footer {
   text-align: center;
 }
 
-@media (max-width:520px) {
+
+@media only screen and (min-width:300px) and (max-width:560px) {
+ 
   .container-nav {
     text-align: center;
     flex-direction: column;
   }
   
-  .container .card {
-    max-width: 500px;
+  .card {
+    width: 100%;
   }
-  
+
+  .mug {
+    max-width: 96%;
+    min-width: 228px;
+    min-height: 228px;
+    margin:0 auto;
+    display: block;
+    text-align: center;  
+  }
 }
 
+@media only screen and (min-width:561px) and (max-width:942px) {
 
+  .card {
+    width: 40%;
+    position: relative;
+  }
+
+
+  .mug {
+    max-width: 96%;
+    min-width: 228px;
+    min-height: 228px;
+    margin:0 auto;
+    display: block;
+    text-align: center;  
+    object-fit:cover;
+    object-position: top center;
+  }
+
+}
