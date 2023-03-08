@@ -15,13 +15,15 @@
       <p>Ceramic Products for Home & Soul</p> 
     </header>
 
-    <nav class="sticky">        
-      <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
-      <a href="#text_elements" class="button-nav">Text</a>
-      <a href="#combined_elements" class="button-nav">Components</a>
-      <a href="#branding_ideas" class="button-nav">Branding</a>
-      <a href="home.html" class="button-nav">Website</a>
-      <a href="#citations" class="button-nav">Citations</a>
+    <nav class="sticky navigation-normal">        
+      <ul>
+        <li><a href="#interactive_elements">Interactive Elements</a></li>
+        <li><a href="#text_elements" >Text</a></li>
+        <li><a href="#combined_elements" >Components</a></li>
+        <li><a href="#branding_ideas" >Branding</a></li>
+        <li><a href="home.html" >Website</a></li>
+        <li><a href="#citations" >Citations</a></li>
+     </ul> 
     </nav>
 
   <section class="container_content">  
@@ -47,7 +49,7 @@
 
 
       <!-- Default Button styling section -->
-      <section class="nav_link_section">
+      <!-- <section class="nav_link_section">
         <h3>Navigation Link</h3>
 
 
@@ -63,7 +65,7 @@
         </div>
 
 
-      </section>
+      </section> -->
 
 
       <section class="button_section">
@@ -310,7 +312,7 @@
       <section class="main_nav_section">
         <h3>Main Navigation</h3>
 
-        <h4>CSS selector:</h4>
+        <!-- <h4>CSS selector:</h4>
         <p>.topnav</p>
 
         <h4>Sample code:</h4>
@@ -319,15 +321,24 @@
         <code>&lt;a href="#" class="button-nav"&gt;Shop&lt;/a&gt;</code>
         <code>&lt;a href="#" class="button-nav"&gt;Course&lt;/a&gt;</code>
         <code>&lt;a href="#" class="button-nav"&gt;About&lt;/a&gt;</code>
-        <code>&lt;/nav&gt;</code>
+        <code>&lt;/nav&gt;</code> -->
 
         <h4>Rendered elements:</h4>
-        <nav>
+        <!-- <nav>
           <a href="#" class="button-nav">Home</a>
           <a href="#" class="button-nav">Shop</a>
           <a href="#" class="button-nav">Course</a>
           <a href="#" class="button-nav">About</a>
+        </nav> -->
+        <nav class="navigation-normal">
+          <ul>
+            <li><a href="#">Home</a ></li>
+            <li><a href="#">Shop</a ></li>
+            <li ><a href="#">About</a ></li>
+            <li><a href="#">Cart</a ></li>
+          </ul>
         </nav>
+
 
       </section>
 
@@ -349,6 +360,49 @@
         </div>
       </section>
       --> 
+
+      <section class="navigation-bar-with-drop-down-menu">
+        <h3>Navigation Bar with Drop-down Menu</h3>
+
+        <h4>Rendered elements:</h4>
+        <nav class="navigation-normal">
+          <ul>
+            <!-- <li><a href="#">Home</a ></li>
+            <li><a href="#">Shop</a ></li> -->
+            <li ><a href="#">About<div class="triangle"></div></a >
+              <ul class="secondary-style">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="#">Cart</a ></li> -->
+          </ul>
+        </nav>
+
+      </section>
+
+      <section class="mobile-hamburger-navigation">
+        <h3>Mobile Hamburger Navigation</h3>
+
+        <h4>Rendered elements:</h4>
+        <nav class="navigation-hamburger">
+          <div id="menuToggle">
+            <input type="checkbox" id="checkbox-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          <ul id="menu">
+              <li ><a href="home.html">Home</a ></li>
+              <li ><a href="shop.html">Shop</a ></li>
+              <li ><a href="about.html">About Us</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li ><a href="cart.html">Cart</a ></li>
+          </ul>
+        </div>
+
+      </section>
 
 
       <section class="product_list_section">
@@ -463,16 +517,19 @@
         <div id="payment-form">
           <p id="payment-form-title">Choose your payment method:</p>
 
-          <div id="radio">
-            <label class="payment-method">
-              <input type="radio" name="method" value="1">Credit card
-            </label>
-            <label class="payment-method">
-              <input type="radio" name="method" value="2">PayPal
-            </label>
-            <label>
-              <input type="radio" name="method" value="3" disabled>WeChat
-            </label>
+          <div class="payment-radio">
+            <input class="radio-type" type="radio" id="credit-card2" name="payment-method" value="1">
+            <label for="credit-card2">Credit card</label>
+          </div>
+  
+          <div class="payment-radio">
+            <input class="radio-type" type="radio" id="PayPal2" name="payment-method"  value="2">  
+            <label for="PayPal2"> PayPal</label>
+          </div>
+  
+          <div class="payment-radio">
+            <input class="radio-type-disabled" type="radio" id="wechat2" name="payment-method" disabled>
+            <label for="wechat2">Wechat</label>
           </div>
           
           <div id="other-input">

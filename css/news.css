@@ -8,23 +8,31 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f9f7f5;
+  color: #3B3431;
 }
 
 h1, h2{
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  color: #3B3431;
 }
 
 h3{
   font-family: 'Playfair Display', serif;
-  font-weight: 400;
+  color: #b86646;
+  font-size: larger;
 }
 
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  color: #3B3431;
 }
 
+p {
+  color:#3B3431 ;
+  line-height: 1.5rem;
+
+}
 
 /* font(end)*/
 
@@ -166,14 +174,13 @@ nav ul li:hover ul, .triangle{
 
 .container-content{
   max-width: 900px;
-  width: 90%;
   margin: auto;
 }
 
 .title {
   text-align: center;
   margin-bottom: 4em;
-  margin-top: 7em;
+  margin-top: 10rem;
 }
 
 .description {
@@ -187,39 +194,33 @@ nav ul li:hover ul, .triangle{
 }
 
 .container1 {
-  display: flex;
-  flex-direction: row;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap;
-  justify-content:left;
   width: 100%;
 }
 
-.container1 .card {
+.card {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
   margin-bottom: 1rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  max-width: 250px;
+  max-width: 900px;
+  display: flex;
+ 
 }
 
-.img {
-  max-width: 100%;
-  display: block;
+.images-cover {
+  width: 300px;
 }
 
-p {
-line-height: 1.5rem;
+.text {
+  padding-left: 2rem;
 }
 
 h4 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: #b86646;
 }
 
 .in-text-link {
@@ -244,7 +245,8 @@ footer {
 
 /* responsive-pages */
 
-@media screen and (min-width:398px) and (max-width:798px) {
+@media only screen and (min-width:300px) and (max-width:560px) {
+
   .container-nav {
     text-align: center;
     flex-direction: column;
@@ -252,13 +254,54 @@ footer {
     margin-bottom: 1.75em;
   }
 
-  .container-content .card {
-    text-align: center;
-    flex-direction: column;
+
+  .images-cover {
+    width: 140px;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
   }
 
-  .container1 {
-    justify-content: center;
+  .text {
+    padding-left: 1rem;
+  }
+
+  h4 {
+    margin-top:0rem;
+    margin-bottom: 0rem;
+    font-size: 16px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  .in-text-link{
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width:561px) and (max-width:798px) {
+  .container-nav {
+    text-align: center;
+    flex-direction: column;
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
+  }
+
+
+  .images-cover {
+    width: 200px;
+  }
+
+  .text {
+    padding-left: 1rem;
+  }
+
+  h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
 /* hamburger menu in */
