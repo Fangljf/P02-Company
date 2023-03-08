@@ -574,8 +574,19 @@ input[type="reset"]:hover {
 }
 
 .navigation-hamburger {
+  display: flex;
   position: relative;
   height: 630px;
+}
+
+.hidden-content {
+  position: relative;
+  width: 340px;
+  height: 650px;
+  background-color: #f9f7f5;
+  left: 0px;
+  margin-left: -340px;
+  z-index: 30;
 }
 
 #checkbox-hamburger {
