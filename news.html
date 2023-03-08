@@ -15,11 +15,11 @@
         <div class="logo">
           <a href="home.html"><img id="logoimage" src="images/branding/logo.png" alt="logo"></a>
         </div>
-        <nav class="navigation-normal">
+        <nav id="navigation-normal">
           <ul>
             <li><a href="home.html">Home</a ></li>
             <li><a href="shop.html">Shop</a ></li>
-            <li><a href="about.html">About<div class="triangle"></div></a >
+            <li ><a href="about.html">About<div class="triangle"></div></a >
               <ul class="secondary-style">
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="news.html">News</a></li>
@@ -29,12 +29,22 @@
             <li><a href="cart.html">Cart</a ></li>
           </ul>
         </nav>
-        <div class="hamburger hamburger--3dy is-active" type="button" style="position: absolute; right: 1.5em; top:1.25em">
-          <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
-            </span>
-        </div>
-        <div id="hamburger-active"></div>
+        <nav id="navigation-hamburger">
+          <div id="menuToggle">
+            <input type="checkbox" id="checkbox-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li ><a href="home.html">Home</a ></li>
+                <li id="hamburger-style-1"><a href="shop.html">Shop</a ></li>
+                <li id="hamburger-style-2"><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="hamburger-style-3"><a href="cart.html">Cart</a ></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -99,30 +109,6 @@
     <footer>
       <p>© 2023 Fang Ceramics.</p>
     </footer>
-
-    <script>
-      /**
-       * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-       *
-       * @private
-       * @author Todd Motto
-       * @link https://github.com/toddmotto/foreach
-       * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-       * @callback requestCallback      callback   - Callback function for each iteration.
-       * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-       * @returns {}
-       */
-        var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-    
-        var hamburgers = document.querySelectorAll(".hamburger");
-        if (hamburgers.length > 0) {
-          forEach(hamburgers, function(hamburger) {
-            hamburger.addEventListener("click", function() {
-              this.classList.toggle("is-active");
-            }, false);
-          });
-        }
-      </script>
 
   </body>
 </html>
