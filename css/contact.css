@@ -35,7 +35,11 @@ p {
 
 /* font(end)*/
 
-
+@media (max-width:900px) {
+  body {
+    padding: 1em;
+  }
+}
 
 /* Navigation(start) */
 header {
@@ -322,7 +326,7 @@ nav ul li:hover ul, .triangle{
 
 .title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   margin-top: 10rem;
 }
 
