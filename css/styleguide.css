@@ -574,11 +574,9 @@ input[type="reset"]:hover {
 }
 
 .navigation-hamburger {
-  display: block;
-  position: fixed;
-  top: -7px;
-  right: 75px;
-  }
+  position: relative;
+  height: 630px;
+}
 
 #checkbox-hamburger {
   background-color: #232323;
@@ -594,23 +592,22 @@ input[type="reset"]:hover {
   -webkit-user-select: none;
   user-select: none;
 }
-  
-/* checkbox */
-#menuToggle input 
+
+
+#menuToggle input
 {
   display: block;
   width: 50px;
   height: 35px;
   position: absolute;
-  top: -12px;
-  left: 200px;
+  top: 30px;
+  left: 180px;
   cursor: pointer;
-  opacity: 1; /* hide this */
+  opacity: 0; /* hide this */
   z-index: 100; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
-  
-/* hamburger */
+
 #menuToggle span
 {
   display: block;
@@ -618,8 +615,8 @@ input[type="reset"]:hover {
   height: 4px;
   margin-bottom: 3.5px;
   position: relative;
-  top: 4px;
-  right: -215px;
+  top: 46px;
+  right: -195px;
   background: #B86646;
   border-radius: 2px;
   z-index: 100;
@@ -627,7 +624,7 @@ input[type="reset"]:hover {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
-  
+
 #menuToggle span:first-child
 {
   transform-origin: 0% 0%;
@@ -638,52 +635,33 @@ input[type="reset"]:hover {
   transform-origin: 2.3px 1.6px; 
 }
 
-/* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
 #menuToggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #B86646;
 }
-  
-/*
-  * But let's hide the middle one.
-  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg);
 }
 
-/*
-  * Ohyeah and the last one should go the other direction
-  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-  
-/*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
-#menu
-{
+
+#menu {
   display:grid;
-  /* row-gap: 2px solid #E3D0B5; */
   grid-template-rows: 80px 80px 50px 50px 50px 80px 100px;
   align-items: center;
   font-weight: 600;
   color:#7C6354;
-  position: absolute;
-  width: 360px;
-  height: 472px;
-  top: 60px;
-  left: 200px;
-  margin: -100px 0 0 -989px;
+  position: relative;
+  width: 300px;
+  height: 450px;
+  left: 0;
+  margin: -50px 0 0 -50px;
   padding-top: 140px;
   background: #FFFFFF;
   z-index: 1;
@@ -695,26 +673,38 @@ input[type="reset"]:hover {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
-  padding: 10px 0;
+
+#menu a {
+  text-decoration: none;
+  color:#7C6354;
 }
 
-/*
-  * And let's slide it in from the left
-  */
-#menuToggle input:checked ~ ul
-{
+#menu li:hover a {
+  padding-bottom: 6px;
+  font-weight: bold;
+  border-bottom: 2px solid #7c6354;
+}
+
+#menu li {
+  padding: 22px 0;
+}
+
+#menuToggle input:checked ~ ul {
   transform: none;
 }
 
-.navigation-hamburger ul li {
+nav li {
   margin-left: 3em;
   margin-right: 3em;
 }
 
+#hamburger-style-1, #hamburger-style-2, #hamburger-style-3 {
+  border-top: solid 1px #E3D0B5;
+}
 
-
+#hamburger-style-1, #hamburger-style-2, #hamburger-style-3 {
+  border-top: solid 1px #E3D0B5;
+}
 
 
 /* product cards */

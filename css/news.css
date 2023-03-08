@@ -36,7 +36,6 @@ p {
 
 /* font(end)*/
 
-
 /* Navigation(start) */
 header {
   position: fixed;
@@ -61,6 +60,10 @@ header {
 
 #logoimage {
   height: 26px;
+}
+
+.logo {
+  padding-left: 0em;
 }
 
 nav{
@@ -115,7 +118,7 @@ nav ul li ul li{
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 16px #efedec;
-  z-index: 120;
+  z-index: 130;
 }
 
 nav ul li ul li a:hover{
@@ -141,22 +144,6 @@ nav ul li:hover ul, .triangle{
   pointer-events: auto;
 }
 
-/* .triangle {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: 6px solid;
-  border-color: #B86646 #f9f7f5 #B86646 #f9f7f5;
-  position: absolute;
-  top: 18px;
-  left: 50px;
-  z-index: 120;
-  transform: rotate(180deg);
-  pointer-events: auto;
-} */
-/* https://zhuanlan.zhihu.com/p/482361933 */
-
 .triangle::after {
   content: "";
   width: 20px;
@@ -166,6 +153,159 @@ nav ul li:hover ul, .triangle{
   top: -30px;
   left: -10px;
 }
+
+#navigation-hamburger{
+  display: none;
+}
+
+/* responsive-pages-normal */
+
+@media (min-width:630px) and (max-width:925px) {
+
+  .logo {
+    padding-left: 2em;
+  }
+
+  nav{
+    display: table;
+    padding-right: 2em;
+  }
+}
+
+/* responsive-pages-hamburger-menu */
+@media (max-width:630px) {
+
+  #navigation-normal {
+    display: none;
+  }
+
+  #navigation-hamburger {
+    display: block;
+    position: fixed;
+    top: -7px;
+    right: 75px;
+  }
+
+  .container-nav {
+    margin: 2.9em;
+    display: grid;
+  }
+
+  .logo {
+    z-index: 100;
+    position: fixed;
+    left: 2em;
+  }
+
+  #checkbox-hamburger {
+    background-color: #232323;
+  }
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  
+  #menuToggle input {
+    display: block;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 100; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  
+  #menuToggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin-bottom: 3.5px;
+    position: relative;
+    top: 4px;
+    right: 4px;
+    background: #B86646;
+    border-radius: 2px;
+    z-index: 100;
+    transform-origin: 3.5px 4px; 
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 2.3px 1.6px; 
+  }
+  
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #B86646;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu {
+    display:grid;
+    grid-template-rows: 80px 80px 50px 50px 50px 80px 100px;
+    align-items: center;
+    font-weight: 600;
+    color:#7C6354;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin: -100px 0 0 0;
+    padding-top: 140px;
+    background: #FFFFFF;
+    z-index: 1;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li {
+    padding: 10px 0;
+  }
+  
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  #hamburger-style-1, #hamburger-style-2, #hamburger-style-3 {
+    border-top: solid 1px #E3D0B5;
+  }
+}
+
+/* learning resources: https://www.w3docs.com/snippets/css/what-does-the-css-tilde-selector-mean.html, https://codepen.io/erikterwan/pen/EVzeRP */
+
 
 /* Navigation(end) */
 
@@ -247,14 +387,6 @@ footer {
 
 @media only screen and (min-width:300px) and (max-width:560px) {
 
-  .container-nav {
-    text-align: center;
-    flex-direction: column;
-    margin-top: 1.75em;
-    margin-bottom: 1.75em;
-  }
-
-
   .images-cover {
     width: 140px;
     height: 100%;
@@ -283,13 +415,6 @@ footer {
 
 
 @media screen and (min-width:561px) and (max-width:798px) {
-  .container-nav {
-    text-align: center;
-    flex-direction: column;
-    margin-top: 1.75em;
-    margin-bottom: 1.75em;
-  }
-
 
   .images-cover {
     width: 200px;
@@ -303,118 +428,4 @@ footer {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-
-/* hamburger menu in */
-
-
-.navigation-normal{
-  display: none;
 }
-
-
-.hamburger {
-  padding: 15px 15px;
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible; }
-  .hamburger:hover {
-    opacity: 0.7; }
-  .hamburger.is-active:hover {
-    opacity: 0.7; }
-  .hamburger.is-active .hamburger-inner,
-  .hamburger.is-active .hamburger-inner::before,
-  .hamburger.is-active .hamburger-inner::after {
-    background-color: #7C6354; }
-
-.hamburger-box {
-  width: 35px;
-  height: 15px;
-  display: inline-block;
-  position: relative; }
-
-.hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px; }
-  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 35px;
-    height: 3px;
-    background-color: #7C6354;
-    border-radius: 3px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease; }
-  .hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block; }
-  .hamburger-inner::before {
-    top: -10px; }
-  .hamburger-inner::after {
-    bottom: -10px; }
-
-  .hamburger--3dy .hamburger-box {
-    perspective: 80px; 
-  }
-  
-  .hamburger--3dy .hamburger-inner {
-    transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-    .hamburger--3dy .hamburger-inner::before, .hamburger--3dy .hamburger-inner::after {
-      transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-  
-  .hamburger--3dy.is-active .hamburger-inner {
-    background-color: transparent !important;
-    transform: rotateX(-180deg); }
-    .hamburger--3dy.is-active .hamburger-inner::before {
-      transform: translate3d(0, 10px, 0) rotate(45deg); }
-    .hamburger--3dy.is-active .hamburger-inner::after {
-      transform: translate3d(0, -10px, 0) rotate(-45deg); }
-
-    /* https://www.youtube.com/watch?v=LciQi9PMnFY */
-
-  #hamburger-active
-  {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #ededed;
-    z-index: 4;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-
-  #hamburger-active li
-  {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-
-  /*
-    * And let's slide it in from the left
-    */
-  #hamburger-active:checked ~ ul
-  {
-    transform: none;
-  }
-
-}
-
-
-
