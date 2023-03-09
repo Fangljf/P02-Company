@@ -339,7 +339,7 @@ nav ul li:hover ul, .triangle{
   border: #635B50 solid 1px;
 }
 
-#thumbnails-second-image {
+#thumbnails-second-image, #thumbnails-third-image {
   max-width: 80px;
 }
 

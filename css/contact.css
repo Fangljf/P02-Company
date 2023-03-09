@@ -198,8 +198,10 @@ nav ul li:hover ul, .triangle{
 
   .logo {
     z-index: 100;
+    display: grid;
     position: fixed;
     left: 2em;
+    
   }
 
   #checkbox-hamburger {
