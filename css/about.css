@@ -159,6 +159,8 @@ nav ul li:hover ul, .triangle{
 
 /* responsive-pages-normal */
 
+
+
 @media (min-width:630px) and (max-width:925px) {
 
   .logo {
@@ -308,6 +310,13 @@ nav ul li:hover ul, .triangle{
   #hamburger-style-1, #hamburger-style-2, #hamburger-style-3 {
     border-top: solid 1px #E3D0B5;
   }
+
+  .footer-container{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
 }
 
 /* learning resources: https://www.w3docs.com/snippets/css/what-does-the-css-tilde-selector-mean.html, https://codepen.io/erikterwan/pen/EVzeRP */
@@ -367,18 +376,6 @@ nav a:hover, nav a:focus {
   text-decoration: none;
 }
 
-.in-text-link {
-  color:#b86646
-}
-
-.in-text-link:hover {
-  color:#d79258
-}
-
-.in-text-link:focus {
-  color:#d79258
-}
-
 
 /* images */
 
@@ -396,8 +393,38 @@ nav a:hover, nav a:focus {
   max-width: 50%;
 }
 
+/* footer */
+
 footer {
   border-top: 1px solid #E3D0B5;
-  text-align: center;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links-container {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.in-text-link {
+  color:#b86646;
+  text-decoration: none;
+}
+  
+.in-text-link:hover {
+  color:#d79258
+}
+  
+.in-text-link:focus {
+  color:#d79258
+}
+  
+/* footer (end) */
