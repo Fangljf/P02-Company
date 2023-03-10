@@ -185,14 +185,12 @@ nav ul li:hover ul, .triangle{
   }
 
   .container-nav {
-    margin: 2.9em;
+    margin: 2em;
     display: grid;
   }
 
   .logo {
     z-index: 100;
-    position: fixed;
-    left: 2em;
   }
 
   #checkbox-hamburger {
